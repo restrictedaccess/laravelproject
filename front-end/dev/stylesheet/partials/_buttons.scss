@@ -1,0 +1,46 @@
+//-------------------------------------
+//  Buttons
+//-------------------------------------
+.btn__regular {
+  @include border-radius(0.5rem);
+  @include transition(all 0.2s ease-in-out);
+  max-width: 25rem;
+  width: 100%;
+  text-align: center;
+  border: none;
+  padding: 1.4rem 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2.3rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 1.5rem;
+  font-family: $font-family-d;
+  color: map-get($global-color, c) !important;
+  background: map-get($global-color, primary);
+  &:focus {
+    background-color: darken(map-get($global-color, primary), 5.5%);
+  }
+  &[disabled],
+  &[disabled]:focus,
+  &.disabled:focus,
+  &.disabled {
+    background: map-get($global-color, disabled);
+    cursor: not-allowed;
+  }
+  &.btn__regular--uppercase {
+    text-transform: uppercase;
+  }
+  &.long{
+    letter-spacing: 0.08em;
+    font-size: 2.1rem;
+  }
+  &.short{
+    letter-spacing: 0.21em;
+  }
+  &.medium {
+    width: auto;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

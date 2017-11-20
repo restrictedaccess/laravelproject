@@ -1,0 +1,27 @@
+.thankyou__page {
+  .thankyou_title {
+    font-size: 2.7rem;
+    line-height: 3.2rem;
+    letter-spacing: 0;
+    color: map-get($global-color, accent);
+    text-align: center;
+    margin-bottom: 0.6rem;
+    font-family: $font-family-d;
+  }
+  .page_title {
+    line-height: 2.7rem;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-top: 0;
+  }
+  .block__icons_cover {
+    text-align: center;
+    padding: 5.2rem 0 6.6rem;
+    i {
+      text-align: center;
+    }
+  }
+}
+.title_404, .title_500{
+  font-size: 2.4rem;
+}

@@ -1,0 +1,50 @@
+"018": {
+  "current": "018",
+  "next": "020",
+  "main": {
+    "id": "social_marital_status",
+    "type": "question",
+    "group": "Marital",
+    "title": "",
+    "label": "What is your current marital status?",
+    "help": "",
+    "image": "icon-marital",
+    "answers": {
+      "template": "select-option",
+      "default": null,
+      "suffix": "",
+      "logical": "paintDepend",
+      "list": [
+        "Single",
+        "Married",
+        "Domestic Partner",
+        "Separated",
+        "Divorced",
+        "Widowed"
+      ]
+    }
+  },
+  "depend": [
+    {
+      "id": "social_lving_arrangement",
+      "type": "question",
+      "group": "Marital",
+      "title": "",
+      "label": "What best describes your current living arrangement? Please mark all that apply.",
+      "help": "",
+      "image": "marital-icon",
+      "answers": {
+        "template": "checkbox-option",
+        "default": null,
+        "suffix": "",
+        "logical": null,
+        "list": [
+          "live alone",
+          "live with my spouse/partner",
+          "live with other family, not including spouse/partner",
+          "live with friends or roommates"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+"015": {
+  "current": "015",
+  "next": "017",
+  "main": {
+    "id": "drinking_frequency",
+    "type": "question",
+    "group": "Alcoholic",
+    "title": "",
+    "label": "In a week, how many days do you or did you have at least one alcoholic drink?",
+    "help": "",
+    "image": "icon-alcoholic",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Days",
+      "logical": {
+        "0": "destroyDepend",
+        "1": "paintDepend",
+        "2": "paintDepend",
+        "3": "paintDepend",
+        "4": "paintDepend",
+        "5": "paintDepend",
+        "6": "paintDepend",
+        "7": "paintDepend"
+      },
+      "list": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "depend": [
+    {
+      "id": "drinking_intensity",
+      "type": "question",
+      "group": "Smoke",
+      "title": "",
+      "label": "On a typical day when you drink, how many drinks do you have? If you no longer drink, how many drinks did you have per day when you did? ",
+      "help": "For example, one glass of wine, one beer, or one shot of spirits is each considered one drink.",
+      "image": "",
+      "logical": null,
+      "answers": {
+        "template": "radio-circle",
+        "default": null,
+        "suffix": "Drinks",
+        "logical": null,
+        "list": [
+          "≤1",
+          2,
+          3,
+          4,
+          5,
+          "≥6",
+          "Don't know"
+        ]
+      }
+    }
+  ]
+}

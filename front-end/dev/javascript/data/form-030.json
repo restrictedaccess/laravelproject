@@ -1,0 +1,21 @@
+"030": {
+  "current": "030",
+  "next": "031",
+  "main": {
+    "id": "",
+    "type": "topic",
+    "group": "Medical",
+    "title": "Please answer about your <span class=\"highlight--medical\">Medical conditions</span>",
+    "label": "",
+    "help": "",
+    "image": "badge-medical",
+    "answers": {
+      "template": "",
+      "default": null,
+      "logic": null,
+      "suffix": "",
+      "list": []
+    }
+  },
+  "depend": []
+}

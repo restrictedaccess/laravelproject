@@ -1,0 +1,30 @@
+"005-1": {
+  "current": "005-1",
+  "next": "005-2",
+  "main": {
+    "id": "cognitive_reading",
+    "type": "question",
+    "group": "Read",
+    "title": "Reading books or news",
+    "label": "In a week, how many days do you spend at least 20 minutes?",
+    "help": "",
+    "image": "icon-read",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Days",
+      "logical": null,
+      "list": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "depend": []
+}

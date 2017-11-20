@@ -1,0 +1,30 @@
+"005-3": {
+  "current": "005-3",
+  "next": "005-4",
+  "main": {
+    "id": "cognitive_games",
+    "type": "question",
+    "group": "Games",
+    "title": "Playing Games",
+    "label": "In a week, how many days do you spend at least 20 minutes?",
+    "help": "Ex) board games, card games or video games",
+    "image": "icon-games",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Days",
+      "logical": null,
+      "list": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "depend": []
+}

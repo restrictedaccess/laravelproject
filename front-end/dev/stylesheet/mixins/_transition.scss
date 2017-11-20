@@ -1,0 +1,6 @@
+// Example: transition($trans)
+@mixin transition($trans) {
+  -webkit-transition: $trans;
+  -moz-transition: $trans;
+  transition: $trans;
+}

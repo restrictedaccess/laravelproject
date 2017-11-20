@@ -1,0 +1,21 @@
+"017": {
+  "current": "017",
+  "next": "018",
+  "main": {
+    "id": "",
+    "type": "topic",
+    "group": "Social",
+    "title": "Please answer about your typical <span class=\"highlight--social\">Social activity</span>",
+    "label": "",
+    "help": "",
+    "image": "badge-social",
+    "answers": {
+      "template": "",
+      "default": null,
+      "logic": null,
+      "suffix": "",
+      "list": []
+    }
+  },
+  "depend": []
+}

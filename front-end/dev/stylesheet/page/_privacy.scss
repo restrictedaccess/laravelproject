@@ -1,0 +1,26 @@
+.change_policy {
+  border-top: 0.1rem solid map-get($global-color, r);
+  padding-top: 2.1rem;
+  .page_title {
+    margin-bottom: 0.5rem;
+  }
+}
+.privacypolicy_info {
+  margin-bottom: 0.7rem;
+}
+.privacypolicy_content {
+  .btn_home {
+    margin-top: 2.1rem;
+  }
+  .list__detail {
+    .list__detail_item {
+      .item_title {
+        margin-left: 1.7rem;
+        &::before {
+          left: 0;
+          position: absolute;
+        }
+      }
+    }
+  }
+}

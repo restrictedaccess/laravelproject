@@ -1,0 +1,27 @@
+{
+  "name": "pegara-brain-salvation",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~2.2.2",
+    "lodash": "~4.8.0",
+    "ratchet": "^2.0.2",
+    "jsrender": "^0.9.75",
+    "countUp.js": "^1.7.0",
+    "Chart.js": "1.1.1",
+    "jquery-validation": "^1.15.0",
+    "fastclick": "^1.0.6"
+  },
+  "homepage": "https://github.com/AsianTechInc/pegara-brain-salvation",
+  "authors": [
+    "Hiratsuka Shinu",
+    "Hung BCP"
+  ],
+  "description": "Front-end development repository",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}

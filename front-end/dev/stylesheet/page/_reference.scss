@@ -1,0 +1,54 @@
+.page_title {
+  font-family: $font-family-c;
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.001em;
+  color: map-get($global-color, a); 
+}
+.reference_content {
+  .caption {
+    font-family: $font-family-c;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    letter-spacing: -0.01em;
+    margin-bottom: 2.3rem;
+    color: map-get($global-color, a);
+  }
+  .table_inner {
+    border-bottom: none;
+    margin-bottom: 1rem;
+  }
+}
+.table-view-cell {
+  &.reference {
+    padding: 1.1rem 0 0.9rem;
+    .navigate-right {
+      margin: 0;
+      padding: 0;
+      .topic {
+        font-size: 1.5rem;
+        letter-spacing: 0.001em;
+        line-height: 1.7rem;
+        color: map-get($global-color, a);
+        font-family: $font-family-d;
+        margin-bottom: 0.6rem;
+      }
+      .tag, .via, .date {
+        font-family: $font-family-c;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        letter-spacing: -0.001em;
+        color: map-get($global-color, a);
+        margin-bottom: 0.4rem;
+      }
+      .date, .via {
+        font-size: 1.2rem;
+        letter-spacing: -0.001em;
+        color: map-get($global-color, q);
+      }
+      .via {
+        letter-spacing: 0.02em;
+      }
+    }      
+  }
+}

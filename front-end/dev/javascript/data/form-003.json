@@ -1,0 +1,62 @@
+"003": {
+  "current": "003",
+  "next": "004",
+  "main": {
+    "id": "physical_moderate_day",
+    "type": "question",
+    "group": "Activity",
+    "title": "Moderate physical activity",
+    "label": "In a week, how many days do you do?",
+    "help": "Ex) gardening, bicycling, jogging, swimming, and playing tennis",
+    "image": "icon-activity",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Days",
+      "logical": {
+        "0": "destroyDepend",
+        "1": "paintDepend",
+        "2": "paintDepend",
+        "3": "paintDepend",
+        "4": "paintDepend",
+        "5": "paintDepend",
+        "6": "paintDepend",
+        "7": "paintDepend"
+      },
+      "list": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "depend": [
+    {
+      "id": "physical_moderate_time",
+      "type": "question",
+      "title": "",
+      "label": "On each day, how long?",
+      "help": "",
+      "image": "",
+      "answers": {
+        "template": "select-option",
+        "default": 2,
+        "suffix": "",
+        "logical": null,
+        "list": [
+          "30 minutes or less",
+          "About 45 min",
+          "About 60 min",
+          "About 75 min",
+          "90 Minutes or more",
+          "Don’t know"
+        ]
+      }
+    }
+  ]
+}

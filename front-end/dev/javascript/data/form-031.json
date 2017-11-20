@@ -1,0 +1,31 @@
+"031": {
+  "current": "031",
+  "next": "033",
+  "main": {
+    "id": "medical_depression",
+    "type": "question",
+    "group": "Conditions",
+    "title": "",
+    "label": "Have you ever been diagnosed with or had any of the following medical conditions? Please mark all that apply",
+    "help": "",
+    "image": "icon-conditions",
+    "answers": {
+      "template": "checkbox-option",
+      "default": null,
+      "suffix": "",
+      "logical": "collectData-031",
+      "list": [
+        "Atrial Fibrillation",
+        "Coronary Artery Disease",
+        "Depression",
+        "Diabetes",
+        "Heart Attack",
+        "High blood pressure or Hypertension",
+        "High cholesterol or hyperlipidemia",
+        "Sleep Apnea",
+        "Stroke"
+      ]
+    }
+  },
+  "depend": []
+}

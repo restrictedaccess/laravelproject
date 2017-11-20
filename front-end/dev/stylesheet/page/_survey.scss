@@ -1,0 +1,125 @@
+.page__survey {
+  &.content__padded {
+    margin-bottom: 0;
+  }
+  .hero {
+    background: none !important;
+    min-height: 0;
+    .main__logo {
+      margin-bottom: 2.05rem;
+    }
+  }
+  .survey__title {
+    font-family: $font-family-g;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+  }
+  .survey__confirm {
+    .section__line:first-child {
+      padding-bottom: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    .survey__confirm_title {
+      font-family: $font-family-g;
+      font-size: 3.15rem;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      letter-spacing: -0.03em;
+    }
+  }
+  .survey__desc {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    line-height: 2.4rem;
+    color: map-get($global-color,a);
+  }
+  .section__line {
+    border-bottom: 1px solid map-get($global-color, d);
+    padding-bottom: 2.6rem;
+    &.section__line--textarea {
+      padding-bottom: 1.7rem;
+    }
+    .radio__circle {
+      margin: 0 2rem;
+    }
+  }
+  .survey__title__block {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    margin: 2.3rem 0 1.6rem;
+    font-family: $font-family-d;
+    color: map-get($global-color, a);
+    .sub {
+      font-size: 1.7rem;
+    }
+  }
+  .list__ask {
+    margin: 0;
+    padding: 0;
+    padding-left: 0.3rem;
+    .list__ask__item {
+      list-style: none;
+    }
+  }
+  .textarea {
+    margin: 0;
+    color: map-get($global-color, s);
+    font-size: 1.6rem;
+    border-color: map-get($global-color, o);
+    width: 100%;
+    min-height: 12.5rem;
+    padding-top: 0.5rem;
+    &.confirm{
+      border-color: map-get($global-color, accent);
+    }
+  }
+  .select__box__label {
+    left: 0;
+  }
+  .widget__confirm {
+    margin-top: 5rem;
+    padding-bottom: 40px;
+  }
+  .text_confirm {
+    font-size: 2rem;
+    margin: 0;
+    font-family: $font-family-d;
+  }
+  &.block__footer {
+    padding: 1.6rem 0;
+    .block__footer__link {
+      &.copyright {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .radio__regular__label, .checkbox__styled__label {
+    font-family: $font-family-c;
+  }
+  .radio__circle {
+    .radio__circle__inner {
+      font-family: $font-family-g;
+    }
+  }
+  .radio__regular {
+    .radio__regular__input {
+     + .radio__regular__label {
+        padding-left: 4.6rem;
+        line-height: 2.1rem;
+        min-height: 2.4rem;
+      }
+    }
+  }
+  .error_message {
+    @include clearfix();
+    clear: both;
+    color: map-get($global-color, z);
+  }
+  #program_want_to_try-error {
+    position: relative;
+    top: -12.5rem;
+    left: 6.5rem;
+  }
+}

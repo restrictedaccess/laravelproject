@@ -1,0 +1,6 @@
+id,evaluation_id,evaluation_str,first_advise,gif_name,is_active,administrator_modified_by,administrator_created_by,created_at,updated_at
+1,10,Excellent,"<b>Keep it up!</b> Continue",excellent,1,0,0,"0000-00-00 00:00:00","0000-00-00 00:00:00"
+2,20,Good,"<b>You're doing great!</b> Now try",good,1,0,0,"0000-00-00 00:00:00","0000-00-00 00:00:00"
+3,30,Average,"<b>You're on the right</b> track. Try",average,1,0,0,"0000-00-00 00:00:00","0000-00-00 00:00:00"
+4,40,Fair,"You can do better. Try",fair,1,0,0,"0000-00-00 00:00:00","0000-00-00 00:00:00"
+5,50,Poor,"For your health, it's best to be",poor,1,0,0,"0000-00-00 00:00:00","0000-00-00 00:00:00"

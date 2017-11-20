@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='../fullcalendar/fullcalendar.css' rel='stylesheet' />
+<link href='../fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='../lib/jquery.min.js'></script>
+<script src='../lib/jquery-ui.custom.min.js'></script>
+<script src='../fullcalendar/fullcalendar.js'></script>
+<script>
+
+	$(document).ready(function() {
+	
+		var calendar = $('#calendar').fullCalendar({
+			header: {
+				left: '',
+				center: 'title',
+				right: ''
+			},
+			defaultView: 'agendaDay',
+			selectable: true,
+			selectHelper: true,
+			viewDisplay: function(view) {
+				$.ajax({
+					url: "json-events.php",
+					dataType: 'json',
+					type:"post",
+					data: {
+						"start": view.start.toString(),
+						"end": view.end.toString(),
+					},
+					success: function(EventSource) {
+						calendar.fullCalendar('removeEvents');
+						calendar.fullCalendar('addEventSource', EventSource);
+					}
+				});
+			},
+			select: function(start, end, allDay) {
+				var title = prompt('予定を入力してください:');
+				if (title) {
+					var randam = Math.floor(Math.random()*1000);
+					var date = new Date();
+					var time = date.getTime();
+					var id = randam + time.toString();
+					var data = {event: {id: id,
+										title: title,
+										start: start,
+										end: end, 
+										allDay: allDay}};
+					$.ajax({
+							type: "POST",
+							url: "json-events.php",
+							data: data,
+							success: function() {
+								
+								calendar.fullCalendar('renderEvent',
+									{
+										id: id,
+										title: title,
+										start: start,
+										end: end,
+										allDay: allDay
+									},
+									true // make the event "stick"
+								);
+								
+								calendar.fullCalendar('refetchEvents');
+							}
+						});
+					
+				}
+				calendar.fullCalendar('unselect');
+			},
+			editable: true,
+			
+			eventDblClick:function(event, jsEvent){
+					var title = prompt('予定を入力してください:', event.title);
+				if(title!==null){
+					event.title=title;
+					var data = {event: {
+					title: event.title,
+					start: event.start,
+					end: event.end, 
+					id: event.id, 
+					allDay: event.allDay}};
+						
+					$.ajax({
+							type: "POST",
+							url: "json-events.php",
+							data: data,
+							success: function() {
+								
+								if(title && title!=""){
+									calendar.fullCalendar('updateEvent', event);
+								}else{
+									calendar.fullCalendar("removeEvents", event.id);	
+								}
+								
+							}
+						});
+				}
+				},
+
+			
+			eventDrop: function(event, jsEvent) {
+					var data = {event: {
+					title: event.title,
+					start: event.start,
+					end: event.end, 
+					id: event.id, 
+					allDay: event.allDay}};
+
+				$.ajax({
+						type: "POST",
+						url: "json-events.php",
+						data: data,
+						success: function() {
+								calendar.fullCalendar('refetchEvents');
+							
+						}
+					});
+			},
+			eventResize: function(event, jsEvent) {
+					var data = {event: {
+					title: event.title,
+					start: event.start,
+					end: event.end, 
+					id: event.id, 
+					allDay: event.allDay}};
+
+				$.ajax({
+						type: "POST",
+						url: "json-events.php",
+						data: data,
+						success: function() {
+								calendar.fullCalendar('refetchEvents');
+							
+						}
+					});
+			},
+			
+			
+		
+		});
+		
+	});
+
+</script>
+<style>
+
+	body {
+		margin-top: 40px;
+		text-align: center;
+		font-size: 14px;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		}
+		
+	#loading {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		}
+
+	#calendar {
+		width: 900px;
+		margin: 0 auto;
+		}
+
+</style>
+</head>
+<body>
+<div id='loading' style='display:none'>loading...</div>
+<div id='calendar'></div>
+<p>json-events.php needs to be running in the same directory.</p>
+</body>
+</html>

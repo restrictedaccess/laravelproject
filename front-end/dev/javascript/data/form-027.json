@@ -1,0 +1,84 @@
+"027": {
+  "current": "027",
+  "next": "030",
+  "main": {
+    "id": "sleep_hours",
+    "type": "question",
+    "group": "Sleep",
+    "title": "",
+    "label": "How many hours do you sleep at night?",
+    "help": "",
+    "image": "icon-sleep",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Hours",
+      "logical": {
+        "0": "paintDepend",
+        "1": "paintDepend",
+        "2": "paintDepend",
+        "3": "paintDepend",
+        "4": "paintDepend",
+        "5": "paintDepend",
+        "6": "paintDepend",
+        "7": "paintDepend"
+      },
+      "list": [
+        "≤4",
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        "≥11"
+      ]
+    }
+  },
+  "depend": [
+    {
+      "id": "sleep_quality",
+      "type": "question",
+      "group": "Stress",
+      "title": "",
+      "label": "How would you rate the quality of your typical night’s sleep?",
+      "help": "",
+      "image": "stress-icon",
+      "answers": {
+        "template": "select-option",
+        "default": 2,
+        "suffix": "",
+        "logical": "paintDepend-1",
+        "list": [
+          "Poor",
+          "Fair",
+          "Good",
+          "Very Good",
+          "Excellent"
+        ]
+      }
+    },
+    {
+      "id": "sleep_interruptions",
+      "type": "question",
+      "group": "Stress",
+      "title": "",
+      "label": "How many times do you wake up and have trouble falling asleep again in a typical night?",
+      "help": "",
+      "image": "stress-icon",
+      "answers": {
+        "template": "radio-circle",
+        "default": null,
+        "suffix": "Times",
+        "logical": null,
+        "list": [
+          0,
+          1,
+          2,
+          3,
+          "≥4"
+        ]
+      }
+    }
+  ]
+}

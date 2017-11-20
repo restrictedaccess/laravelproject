@@ -1,0 +1,27 @@
+"034": {
+  "current": "034",
+  "next": "035",
+  "main": {
+    "id": "education_level",
+    "type": "question",
+    "group": "Education",
+    "title": "",
+    "label": "What is your highest completed level of education?",
+    "help": "",
+    "image": "icon-education",
+    "answers": {
+      "template": "radio-regular",
+      "default": null,
+      "suffix": "",
+      "logical": null,
+      "list": [
+        "Grammar School  (Less than High School)",
+        "High School or General Educational Development (GED)",
+        "Associate’s (or 2-year) Degree",
+        "Bachelor’s Degree",
+        "Graduate Degree (for example: Master’s Degree, PhD, MD)"
+      ]
+    }
+  },
+  "depend": []
+}

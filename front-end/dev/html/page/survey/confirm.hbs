@@ -1,0 +1,66 @@
+---
+layout: layout.hbs
+---
+<div class="content">
+  <div class="page__survey content__padded">
+    <div class="hero">
+      <div class="main__logo">
+        <h1>
+          <img class="top__logo" alt="brainsalvation" src="{{assets}}images/front/logo_savation.png">
+        </h1>
+      </div>
+    </div>
+    <section>
+      <div class="survey__confirm">
+        <div class="section__line c">
+          <h3 class="survey__confirm_title title__set primary">Quick Survey-Confirm</h3>
+        </div>
+        <div class="section__line c">
+          <p class="survey__title__block">How satisfied or dissatisfied are you<br>with each of the following?</p>
+          <p class="title__set primary text_confirm js-show-satisfied">Very satisfied</p>
+        </div>
+        <div class="section__line">
+          <p class="survey__title__block c">Why do you feel that way?</p>
+          <div class="textarea confirm">
+            <p class="js-show-comment-feel">free comment free comment free comment free comment free comment free comment free comment free comment free comment free comment free comment free comment free comment free comment</p>
+          </div>
+        </div>
+        <div class="section__line c">
+          <p class="survey__title__block">If brainsalvation provided Alzheimer's<br>disease prevention programs<br><span class="sub">(dietary advice, exercise guidance, etc.),</span><br>would you want to try it?</p>
+          <div class="radio__circle">
+            <input type="radio" class="radio__circle__input" id="reply-confirm-1" name="reply-confirm" value="" checked="">
+            <label class="radio__circle__inner js-show-reply text-capitalize" for="reply-confirm-1">Yes</label>
+          </div>
+        </div>
+        <div class="section__line js-render-reply" data-reply="yes">
+          <p class="survey__title__block c">If you answered YES,<br>how much would you be willing<br>to pay for such a service?</p>
+          <p class="title__set primary text_confirm c js-show-yes-willing">less than $10 a month</p>
+        </div>
+        <div class="section__line js-render-reply" data-reply="no">
+          <p class="survey__title__block c">If you answered NO,<br>and you are not willing to try Alzheimer's prevention programs,<br>why do you feel that way?</p>
+          <p class="title__set primary text_confirm c js-show-no-willing">I'm more concerned about other diseases (specifically, cancer, stroke, etc.)</p>
+        </div>
+        <div class="section__line c">
+          <p class="survey__title__block">How likely is it that you would<br>recommend this test to a<br>friend or colleague?</p>
+          <div class="radio__circle">
+            <input type="radio" class="radio__circle__input js-choice-reply" id="likely-confirm-1" name="likely-confirm" value="" checked="">
+            <label class="radio__circle__inner js-show-likely" for="likely-confirm-1">1</label>
+          </div>
+        </div>
+        <div class="section__line">
+          <p class="survey__title__block c">If you have any other comments, please let us know.</p>
+          <div class="textarea confirm">
+            <p class="js-show-comment-other">free comment free comment free comment free comment free comment free comment free comment free comment free comment free comment free comment free comment free comment free comment</p>
+          </div>
+        </div>
+        <div class="widget__confirm">
+          <a href="#" class="btn btn-block btn__regular btn__regular js-step-target">Send</a>
+          <a href="#" class="btn btn-block btn__regular btn__regular js-step-target">Revision</a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="page__survey block__footer">
+    <p class="block__footer__link copyright">Copyright &copy; 2015 Pegara, Inc. All Rights Reserved.</p>
+  </div>
+</div>

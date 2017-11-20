@@ -1,0 +1,25 @@
+"022": {
+  "current": "022",
+  "next": "023",
+  "main": {
+    "id": "social_close_relationship",
+    "type": "question",
+    "group": "Relations",
+    "title": "",
+    "label": "Can you think of at least one person with whom you have a relationship close enough that you could call on them for help, if you needed it?",
+    "help": "",
+    "image": "icon-relations",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "",
+      "logical": null,
+      "list": [
+        "Yes",
+        "No",
+        "Don't know"
+      ]
+    }
+  },
+  "depend": []
+}

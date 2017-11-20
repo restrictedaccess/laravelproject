@@ -1,0 +1,8 @@
+!.gitkeep
+node_modules/
+bower_components/
+dev/javascript/libs/
+*.log
+npm-debug.log*
+.DS_Store
+.sass-cache

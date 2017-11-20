@@ -1,0 +1,28 @@
+"010": {
+  "current": "010",
+  "next": "011",
+  "main": {
+    "id": "diet_olive_oil_use",
+    "type": "question",
+    "group": "Olive oil",
+    "title": "",
+    "label": "If you cook at home, do you cook with olive oil?",
+    "help": "Ex) diet soda",
+    "image": "icon-olive",
+    "answers": {
+      "template": "radio-regular",
+      "default": null,
+      "suffix": "",
+      "logical": null,
+      "list": [
+        "Yes, every day or almost every day",
+        "Yes, several times  a week",
+        "Yes, occasionally",
+        "No",
+        "Don’t know",
+        "Don’t cook"
+      ]
+    }
+  },
+  "depend": []
+}

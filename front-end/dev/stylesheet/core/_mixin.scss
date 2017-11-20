@@ -1,0 +1,89 @@
+/**********************************
+  border
+**********************************/
+@mixin bd ($width, $style, $color) { border           : $width $style $color; }
+@mixin bdt($width, $style, $color) { border-top       : $width $style $color; }
+@mixin bdr($width, $style, $color) { border-right     : $width $style $color; }
+@mixin bdb($width, $style, $color) { border-bottom    : $width $style $color; }
+@mixin bdl($width, $style, $color) { border-left      : $width $style $color; }
+
+
+
+
+/**********************************
+  break point
+**********************************/
+@mixin break-point-a {
+  @media (max-width: map-get($global-width, a)) {
+    @content;
+  }
+}
+/**********************************
+  sprite
+**********************************/
+@mixin r-sprite-width($sprite){
+  width: nth($sprite, 5)/2;
+}
+@mixin r-sprite-height($sprite){
+  height: nth($sprite, 6)/2;
+}
+@mixin r-sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3)/2;
+  $sprite-offset-y: nth($sprite, 4)/2;
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+@mixin r-sprite-size($sprite) {
+  background-size: nth($sprite, 7)/2 nth($sprite, 8)/2;
+}
+@mixin r-sprite($sprite) {
+  @include sprite-image($sprite);
+  @include r-sprite-position($sprite);
+  @include r-sprite-width($sprite);
+  @include r-sprite-height($sprite);
+  @include r-sprite-size($sprite);
+}
+@mixin wall($sprite) {
+  @include r-sprite($sprite)
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin box-sizing($type: border-box) {
+  -webkit-box-sizing: $type;
+  -moz-box-sizing: $type;
+  -o-box-sizing: $type;
+  box-sizing: $type;
+}
+@mixin box-shadow($string) {
+  -webkit-box-shadow: $string;
+  -moz-box-shadow: $string;
+  -o-box-shadow: $string;
+  box-shadow: $string;
+}
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+@mixin scale($factor) {
+  -webkit-transform: scale($factor);
+  -moz-transform: scale($factor);
+  -o-transform: scale($factor);
+  transform: scale($factor);
+}
+@mixin rotate($deg) {
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  transform: rotate($deg);
+}
+@mixin translate ($x, $y:0) {
+  -webkit-transform: translate($x, $y);
+  -moz-transform: translate($x, $y);
+  -o-transform: translate($x, $y);
+  transform: translate($x, $y);
+}

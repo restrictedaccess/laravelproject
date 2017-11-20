@@ -1,0 +1,21 @@
+"001": {
+  "current": "001",
+  "next": "002",
+  "main": {
+    "id": "",
+    "type": "topic",
+    "group": "Habits",
+    "title": "Please answer about your <span class=\"highlight--habits\">Habits</span> in a typical week.",
+    "label": "",
+    "help": "",
+    "image": "badge-habits",
+    "answers": {
+      "template": "",
+      "default": null,
+      "logic": null,
+      "suffix": "",
+      "list": []
+    }
+  },
+  "depend": []
+}

@@ -1,0 +1,170 @@
+---
+layout: layout.hbs
+---
+<div class="content">
+  <div class="page__survey content__padded">
+    <div class="hero">
+      <div class="main__logo">
+        <h1>
+          <img class="top__logo" alt="brainsalvation" src="{{assets}}images/front/logo_savation.png">
+        </h1>
+      </div>
+    </div>
+    <form class="survey__form" action="" method="post">
+      <section>
+        <div class="section__line c">
+          <h3 class="survey__title title__set primary">Quick Survey</h3>
+          <p class="survey__desc">Your feedback is so helpful<br>for us to hear.<br>If you have a few minutes to<br>answer a quick survey.</p>
+        </div>
+        <div class="section__line">
+          <p class="survey__title__block c">How satisfied or dissatisfied are you with each of the following?</p>
+          <ul class="list__ask">
+            <li class="list__ask__item">
+              <div class="radio__regular">
+                <input type="radio" class="radio__regular__input js-input" id="satisfied-1" name="satisfaction" value="one period of stress" checked="" required="">
+                <label class="radio__regular__label" for="satisfied-1">Very satisfied</label>
+              </div>
+            </li>
+            <li class="list__ask__item">
+              <div class="radio__regular">
+                <input type="radio" class="radio__regular__input js-input" id="satisfied-2" value="Satisfied" name="satisfaction" required="">
+                <label class="radio__regular__label" for="satisfied-2">Satisfied</label>
+              </div>
+            </li>
+            <li class="list__ask__item">
+              <div class="radio__regular">
+                <input type="radio" class="radio__regular__input js-input" id="satisfied-3" value="Neutral" name="satisfaction" required="">
+                <label class="radio__regular__label" for="satisfied-3">Neutral</label>
+              </div>
+            </li>
+            <li class="list__ask__item">
+              <div class="radio__regular">
+                <input type="radio" class="radio__regular__input js-input" id="satisfied-4" value="Dissatisfied" name="satisfaction" required="">
+                <label class="radio__regular__label" for="satisfied-4">Dissatisfied</label>
+              </div>
+            </li>
+            <li class="list__ask__item">
+              <div class="radio__regular">
+                <input type="radio" class="radio__regular__input js-input" id="satisfied-5" value="Very dissatisfied" name="satisfaction" required="">
+                <label class="radio__regular__label" for="satisfied-5">Very dissatisfied</label>
+              </div>
+            </li>
+            <li class="list__ask__item">
+              <div class="radio__regular">
+                <input type="radio" class="radio__regular__input js-input" id="satisfied-6" value="(Not Applicable)" name="satisfaction" required="">
+                <label class="radio__regular__label" for="satisfied-6">N/A (Not Applicable)</label>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="section__line section__line--textarea">
+          <p class="survey__title__block c">Why do you feel that way?</p>
+          <textarea class="textarea js-input" placeholder="free comment" name="satisfaction_why" rows="5"></textarea>
+        </div>
+        <div class="section__line c">
+          <p class="survey__title__block">If brainsalvation provided Alzheimer's<br>disease prevention programs<br><span class="sub">(dietary advice, exercise guidance, etc.),</span><br>would you want to try it?</p>
+          <div class="radio__circle">
+            <input type="radio" class="radio__circle__input js-choice-reply js-input" id="reply-1" name="program_want_to_try" value="yes" required="">
+            <label class="radio__circle__inner" for="reply-1">Yes</label>
+          </div>
+          <div class="radio__circle">
+            <input type="radio" class="radio__circle__input js-choice-reply js-input" id="reply-2" name="program_want_to_try" value="no" required="">
+            <label class="radio__circle__inner" for="reply-2">No</label>
+          </div>
+        </div>
+        <div class="section__line js-render-reply is-hidden" data-reply="yes">
+          <p class="survey__title__block c">If you answered YES,<br>how much would you be willing<br>to pay for such a service?</p>
+          <ul class="list__ask">
+            <li class="list__ask__item">
+              <div class="radio__regular">
+                <input type="radio" class="radio__regular__input js-input" id="yes-willing-1" name="program_how_much" value="less than $10 a month">
+                <label class="radio__regular__label" for="yes-willing-1">less than $10 a month</label>
+              </div>
+            </li>
+            <li class="list__ask__item">
+              <div class="radio__regular">
+                <input type="radio" class="radio__regular__input js-input" id="yes-willing-2" value="$10 to $20 monthly" name="program_how_much">
+                <label class="radio__regular__label" for="yes-willing-2">$10 to $20 monthly</label>
+              </div>
+            </li>
+            <li class="list__ask__item">
+              <div class="radio__regular">
+                <input type="radio" class="radio__regular__input js-input" id="yes-willing-3" value="$20 to $30 monthly" name="program_how_much">
+                <label class="radio__regular__label" for="yes-willing-3">$20 to $30 monthly</label>
+              </div>
+            </li>
+            <li class="list__ask__item">
+              <div class="radio__regular">
+                <input type="radio" class="radio__regular__input js-input" id="yes-willing-4" value="$30 to $40 monthly" name="program_how_much">
+                <label class="radio__regular__label" for="yes-willing-4">$30 to $40 monthly</label>
+              </div>
+            </li>
+            <li class="list__ask__item">
+              <div class="radio__regular">
+                <input type="radio" class="radio__regular__input js-input" id="yes-willing-5" value="$40 or more montly" name="program_how_much">
+                <label class="radio__regular__label" for="yes-willing-5">$40 or more montly</label>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="section__line js-render-reply is-hidden" data-reply="no">
+          <p class="survey__title__block c">If you answered NO,<br>and you are not willing to try<br>Alzheimer's prevention programs,<br>why do you feel that way?</p>
+          <ul class="list__ask">
+            <li class="list__ask__item">
+              <div class="checkbox__styled">
+                <input type="checkbox" class="checkbox__styled__input js-input" id="no-willing-1" value="I'm not worried because I am healthy" name="program_why_not[]">
+                <label class="checkbox__styled__label" for="no-willing-1">I'm not worried because I am healthy</label>
+              </div>
+            </li>
+            <li class="list__ask__item">
+              <div class="checkbox__styled">
+                <input type="checkbox" class="checkbox__styled__input js-input" id="no-willing-2" value="I'm more concerned about other diseases (specifically, cancer, stroke, etc.)" name="program_why_not[]">
+                <label class="checkbox__styled__label" for="no-willing-2">I'm more concerned about other diseases (specifically, cancer, stroke, etc.)</label>
+              </div>
+            </li>
+            <li class="list__ask__item">
+              <div class="checkbox__styled">
+                <input type="checkbox" class="checkbox__styled__input js-input" id="no-willing-3" value="Economical reasons" name="program_why_not[]">
+                <label class="checkbox__styled__label" for="no-willing-3">Economical reasons</label>
+              </div>
+            </li>
+            <li class="list__ask__item">
+              <div class="checkbox__styled">
+                <textarea class="textarea js-input" placeholder="free comment" name="other_specify" rows="5"></textarea>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="section__line c">
+          <p class="survey__title__block">How likely is it that you would<br>recommend this test to a<br>friend or colleague?</p>
+          <div class="select__box">
+            <select class="select__box__actual js-input" name="recommendation">
+              <option value="-1">Select your answer</option>
+              <option value="0">0 (Not at all likely)</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10 (Extreamly likely)</option>
+            </select>
+          </div>
+        </div>
+        <div class="section__comment c">
+          <p class="survey__title__block">If you have any other comments, please let us know.</p>
+          <textarea class="textarea js-input" placeholder="free comment" name="free_comment" rows="5"></textarea
+        </div>
+        <div class="widget__confirm">
+          <button type="submit" class="btn btn-block btn__regular btn__regular js-step-target" data-step="survey_confirm">Send</button>
+        </div>
+      </section>
+    </form>
+  </div>
+  <div class="page__survey block__footer">
+    <p class="block__footer__link copyright">Copyright &copy; 2015 Pegara, Inc. All Rights Reserved.</p>
+  </div>
+</div>

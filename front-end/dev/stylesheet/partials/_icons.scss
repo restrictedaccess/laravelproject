@@ -1,0 +1,13 @@
+/*************************************
+**************************************
+These are the styles for
+the icons section
+**************************************
+**************************************/
+
+[class^="icons_"],
+[class*=" icons_"] {
+  display: inline-block;
+}
+
+@include retina-sprites($retina-groups);

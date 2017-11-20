@@ -1,0 +1,200 @@
+.page-rrs {
+  margin-top: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.hr-line {
+  display: block;
+  width: 100%;
+  height: .1rem;
+  background-color: map-get($global_color, d);
+  margin: 2.5rem auto;
+}
+
+.btn__regular {
+  &.long {
+    font-size: 2.3rem;
+  }
+}
+
+.form-topic {
+  margin-top: 10rem;
+  .topic__title {
+    font-family: $font-family-d;
+    font-size: 2.7rem;
+    font-weight: normal;
+    .highlight--habits {
+      color: map-get($global-color, i);
+    }
+    .highlight--diet {
+      color: map-get($global-color, h);
+    }
+    .highlight--social {
+      color: map-get($global-color, k);
+    }
+    .highlight--stress {
+      color: map-get($global-color, g);
+    }
+    .highlight--medical {
+      color: map-get($global-color, l);
+    }
+  }
+  .topic__cover {
+    display: block;
+    margin: 6rem auto;
+    .topic__cover__img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.form-question {
+  .question__cat {
+    display: block;
+    margin: 2.5rem auto;
+    font-family: $font_family_g;
+    font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    .question__icon,
+    .question__group {
+      position: relative;
+      display: inline-block;
+    }
+    .question__icon {
+      margin-right: .55rem;
+    }
+    .question__group {
+      top: -13px;
+      margin-left: .55rem;
+    }
+  }
+  .question__title--first {
+    margin-bottom: 0;
+    font-family: $font-family-d;
+    font-size: 2.7rem;
+    font-weight: normal;
+  }
+  .question__title--second {
+    margin-bottom: 0;
+    font-family: $font-family-d;
+    font-size: 2rem;
+    font-weight: normal;
+  }
+  .question__help {
+    margin-top: .7rem;
+    font-family: $font-family-c;
+    font-size: 1.9rem;
+    color: map-get($global-color, a);
+  }
+  .question__depend {
+    border-top: .1rem solid map-get($global_color, d);
+    border-bottom: .1rem solid map-get($global_color, d);
+    padding-top: 2.4rem;
+  }
+  .question__depend:last-child {
+    border-top: none;
+  }
+  .answers {
+    margin-top: 2.4rem;
+    margin-bottom: 2.5rem;
+    &.answers--5 {
+      .radio__circle:first-child:nth-last-child(5),
+      .radio__circle:first-child:nth-last-child(5) ~ .radio__circle {
+        width: auto;
+      }
+      .radio__circle {
+        padding: 0 0.03rem;
+      }
+    }
+    &.answers--6 {
+      .radio__circle {
+        padding: 0 2.1rem;
+      }
+    }
+    &.answers--8 {
+      .radio__circle:nth-child(-n+4) {
+        margin-bottom: 1.5rem;
+      }
+    }
+    .answers__list {
+      text-align: center;
+      .radio__circle:nth-child(-n+3) {
+        margin-bottom: 1.5rem;
+      }
+      .radio__circle:first-child:nth-last-child(3),
+      .radio__circle:first-child:nth-last-child(3) ~ .radio__circle {
+        width: auto;
+      }
+    }
+    .radio__circle__inner {
+      &.radio__circle__inner--long {
+        position: relative;
+        top: -3px;
+      }
+    }
+    .answers__suffix {
+      margin-top: .5rem;
+      padding-right: 1.4rem;
+      font-family: $font-family-d;
+      font-size: 1.8rem;
+      color: map-get($global-color, b);
+      text-align: right;
+    }
+    .select__box {
+      margin: 0 auto;
+    }
+  }
+  .btn__regular {
+    margin-top: 2.4rem;
+  }
+}
+
+.physical_light_day,
+.physical_moderate_day,
+.physical_vigorous_day,
+.cognitive_reading,
+.cognitive_puzzles,
+.cognitive_games,
+.cognitive_art {
+  color: map-get($global-color, j);
+}
+
+.sleep_hours,
+.smoking_ever,
+.drinking_frequency,
+.drinking_ever,
+.stress_frequency {
+  color: map-get($global-color, e);
+}
+
+.diet_olive_oil_use,
+.diet_natural_sugars,
+.diet_artificial_sweeteners,
+.diet_non_fried_fish,
+.diet_vegetable,
+.diet_red_meat,
+.diet_fruit,
+.diet_chicken,
+.diet_nuts,
+.diet_high_carb_foods {
+  color: map-get($global-color, h);
+}
+.medical_depression_inherit,
+.medical_depression,
+.primary_occupation,
+.education_level,
+.ethnicity {
+  color: map-get($global-color, l);
+}
+.social_marital_status {
+  color: map-get($global-color, m);
+}
+.social_group_activity_participation,
+.social_close_relationship {
+  color: map-get($global-color, t);
+}

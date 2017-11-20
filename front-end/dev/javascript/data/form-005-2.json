@@ -1,0 +1,30 @@
+"005-2": {
+  "current": "005-2",
+  "next": "005-3",
+  "main": {
+    "id": "cognitive_puzzles",
+    "type": "question",
+    "group": "Puzzles",
+    "title": "Solving puzzles",
+    "label": "In a week, how many days do you spend at least 20 minutes?",
+    "help": "Ex) crossword puzzles or Sudoku",
+    "image": "icon-puzzles",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Days",
+      "logical": null,
+      "list": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "depend": []
+}

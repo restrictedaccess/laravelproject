@@ -1,0 +1,155 @@
+//-------------------------------------
+//  Profile form page
+//-------------------------------------
+.profile_content {
+  .title_profile {
+    margin-bottom: 0.9rem;
+    font: 2.2rem $font-family-c;
+    color: map-get($global-color, a);
+  }
+  .input-group {
+    .input-row {
+      height: auto;
+      padding: 1rem 0;
+      border-color: map-get($global-color, aa);
+      .input-control {
+        @include clearfix();
+        position: relative;
+        .measure__circle {
+          float: right;
+          margin-left: 1.5rem;
+          .radio__circle__inner {
+            padding: 0;
+            line-height: 5.5rem !important;
+            max-height: 5.5rem;
+            min-height: 5.5rem;
+            max-width: 5.5rem;
+            min-width: 5.5rem;
+            font: 1.4rem $font-family-g;
+          }
+        }
+        .radio__circle:first-child:nth-last-child(2),
+        .radio__circle:first-child:nth-last-child(2) ~ .radio__circle {
+          width: auto;
+        }
+        .cases_value {
+          float: left;
+          width: 5rem;
+        }
+        .error_message {
+          @include clearfix();
+          clear: both;
+          margin-top: 0.2rem;
+          color: map-get($global-color, z);
+        }
+        #gender-error,
+        #height-error,
+        #weight-error {
+          position: absolute;
+          bottom: -1.7rem;
+          left: -7.7rem;
+        }
+      }
+      .label__profile,
+      .input__profile {
+        letter-spacing: -0.01em;
+      }
+      .label__profile {
+        padding: 0.3rem 0 0;
+        width: auto;
+        font: 1.6rem $font-family-c;
+      }
+      .compulsory__status {
+        margin-top: -0.4rem;
+        color: map-get($global-color, accent);
+        font: 3rem $font-family-c;
+        line-height: normal;
+        height: 2rem;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .input__profile {
+        padding-right: 0;
+        float: none;
+        width: 100%;
+        height: 2.4rem;
+        color: map-get($global-color, a);
+        font-size: 1.9rem $font-family-d;
+        &[type="date"] {
+          position: relative;
+          z-index: 100;
+        }
+        &[type="date"]::-webkit-inner-spin-button,
+        &[type="date"]::-webkit-calendar-picker-indicator {
+          @include opacity(0);
+          -webkit-appearance: none;
+          position: relative;
+          z-index: 100;
+        }
+      }
+      .checkbox__styled {
+        min-height: 2.5rem;
+        .checkbox__styled__label {
+          padding: 0.3rem 0 0 3.6rem;
+          float: none;
+          width: auto;
+          line-height: 2rem !important;
+          min-height: 2.5rem;
+          font: 1.6rem $font-family-c;
+          color: map-get($global-color, a);
+        }
+        .checkbox__styled__input {
+          &:checked {
+            + .checkbox__styled__label {
+              &::after {
+                @include abs-pos ($top: 0.6rem, $right: auto, $bottom: auto, $left: 0.9rem);
+              }
+            }
+          }
+        }
+        &.distance_pad {
+          padding: 1.3rem 0 0.3rem;
+        }
+      }
+      &.placement-row {
+        padding: 1.4rem 0;
+      }
+      .dropdown_day {
+        @include abs-pos ($top: 0, $right: 0, $bottom: auto, $left: auto);
+        z-index: 1;
+        width: 1.3rem;
+        height: 2.4rem;
+        .icons_arrow_down {
+          margin-top: 0.9rem;
+          float: right;
+          vertical-align: top;
+        }
+      }
+      &.birth-row {
+        padding: 0.7rem 0;
+      }
+    }
+    .para_terms {
+      margin: 1.6rem 0 1.3rem;
+      font: 1.4rem $font-family-c;
+      color: map-get($global-color, q);
+    }
+    .link_terms {
+      text-decoration: underline;
+      color: map-get($global-color, primary);
+      &:focus,
+      &:hover {
+        color: darken(map-get($global-color, primary), 8.5%)
+      }
+    }
+    .check__score {
+      margin: 2.4rem 0;
+      text-align: center;
+      .btn__regular {
+        font-size: 2.1rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+}

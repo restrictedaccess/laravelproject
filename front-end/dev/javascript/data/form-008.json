@@ -1,0 +1,27 @@
+"008": {
+  "current": "008",
+  "next": "009",
+  "main": {
+    "id": "diet_natural_sugars",
+    "type": "question",
+    "group": "Sugar",
+    "title": "",
+    "label": "How often do you consume Natural-sugary candy or drinks?",
+    "help": "Ex) soda, juice, or sweetened coffee",
+    "image": "icon-sugar",
+    "answers": {
+      "template": "select-option",
+      "default": 2,
+      "suffix": "",
+      "logical": null,
+      "list": [
+        "Never or Almost Never",
+        "One Time a Week",
+        "A Few Times a Week",
+        "One Time a Day",
+        "A Few Times a Day or More"
+      ]
+    }
+  },
+  "depend": []
+}

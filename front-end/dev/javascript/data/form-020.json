@@ -1,0 +1,50 @@
+"020": {
+  "current": "020",
+  "next": "022",
+  "main": {
+    "id": "social_group_activity_participation",
+    "type": "question",
+    "group": "Social events",
+    "title": "",
+    "label": "How often do you participate in social, political, or community group events?",
+    "help": "",
+    "image": "icon-social",
+    "answers": {
+      "template": "select-option",
+      "default": null,
+      "suffix": "",
+      "logical": "paintDepend",
+      "list": [
+        "A Few Times a Year or Less",
+        "One Time a Month",
+        "A Few Times a Month",
+        "One Time a Week",
+        "A Few Times a Week or More"
+      ]
+    }
+  },
+  "depend": [
+    {
+      "id": "social_event_attendance",
+      "type": "question",
+      "group": "Social",
+      "title": "",
+      "label": "How often do you participate in social, events with friends or coworkers?",
+      "help": "",
+      "image": "social-icon",
+      "answers": {
+        "template": "select-option",
+        "default": null,
+        "suffix": "",
+        "logical": null,
+        "list": [
+          "A Few Times a Year or Less",
+          "One Time a Month",
+          "A Few Times a Month",
+          "One Time a Week",
+          "A Few Times a Week or More"
+        ]
+      }
+    }
+  ]
+}

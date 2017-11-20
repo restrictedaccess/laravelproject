@@ -1,0 +1,30 @@
+"007-6": {
+  "current": "007-6",
+  "next": "007-7",
+  "main": {
+    "id": "diet_nuts",
+    "type": "question",
+    "group": "Nuts",
+    "title": "Nuts",
+    "label": "In a week, how many days do you eat at least one meal containing a portion?",
+    "help": "",
+    "image": "icon-nuts",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Days",
+      "logical": null,
+      "list": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "depend": []
+}

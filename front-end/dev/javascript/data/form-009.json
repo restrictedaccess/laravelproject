@@ -1,0 +1,27 @@
+"009": {
+  "current": "009",
+  "next": "010",
+  "main": {
+    "id": "diet_artificial_sweeteners",
+    "type": "question",
+    "group": "Sugar",
+    "title": "",
+    "label": "How often do you consume Artificially-sweetened candy or drinks?",
+    "help": "Ex) diet soda",
+    "image": "icon-sugar",
+    "answers": {
+      "template": "select-option",
+      "default": 2,
+      "suffix": "",
+      "logical": null,
+      "list": [
+        "Never or Almost Never",
+        "One Time a Week",
+        "A Few Times a Week",
+        "One Time a Day",
+        "A Few Times a Day or More"
+      ]
+    }
+  },
+  "depend": []
+}

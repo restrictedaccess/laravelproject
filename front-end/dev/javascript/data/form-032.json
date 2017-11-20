@@ -1,0 +1,27 @@
+"032": {
+  "current": "032",
+  "next": "033",
+  "main": {
+    "id": "medical_depression_inherit",
+    "type": "question",
+    "group": "Conditions",
+    "title": "",
+    "label": "",
+    "help": "",
+    "image": "icon-conditions",
+    "answers": {
+      "template": "radio-regular",
+      "default": null,
+      "suffix": "",
+      "logical": null,
+      "list": [
+        "Yes, diet",
+        "Yes, exercise",
+        "Yes, medication",
+        "No",
+        "Don’t know"
+      ]
+    }
+  },
+  "depend": []
+}

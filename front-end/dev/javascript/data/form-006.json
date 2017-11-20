@@ -1,0 +1,21 @@
+"006": {
+  "current": "006",
+  "next": "007-1",
+  "main": {
+    "id": "",
+    "type": "topic",
+    "group": "Diet",
+    "title": "Please answer about your <span class=\"highlight--diet\">Diet habits</span> in a typical week.",
+    "label": "",
+    "help": "",
+    "image": "badge-diet",
+    "answers": {
+      "template": "",
+      "default": null,
+      "logic": null,
+      "suffix": "",
+      "list": []
+    }
+  },
+  "depend": []
+}

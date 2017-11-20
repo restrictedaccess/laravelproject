@@ -1,0 +1,31 @@
+"033": {
+  "current": "033",
+  "next": "034",
+  "main": {
+    "id": "primary_occupation",
+    "type": "question",
+    "group": "Conditions",
+    "title": "",
+    "label": "Which is one category best describes the kind of work you do (or did, if you no longer work) as your primary occupation?",
+    "help": "",
+    "image": "icon-conditions",
+    "answers": {
+      "template": "radio-regular",
+      "default": null,
+      "suffix": "",
+      "logical": null,
+      "list": [
+        "Administrative Support",
+        "Precision production, craft, repair",
+        "Farming/forestry/fishing",
+        "Professional",
+        "Laborer",
+        "Sales",
+        "Managerial",
+        "Service",
+        "Technical"
+      ]
+    }
+  },
+  "depend": []
+}

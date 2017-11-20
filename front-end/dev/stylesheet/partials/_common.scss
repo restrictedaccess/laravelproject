@@ -1,0 +1,21 @@
+.title__set {
+  &.primary {
+    color: map-get($global-color, accent);
+  }
+}
+.textarea {
+  position: relative;
+  padding: 1.5rem;
+  &.confirm {
+    border: 1px dashed map-get($global-color, accent);
+    border-radius: 4px;
+    padding: 1.2rem 1.5rem;
+    p {
+      color: map-get($global-color, a);
+      font-size: 1.6rem;
+    }
+  }
+}
+.text-capitalize {
+  text-transform: capitalize;
+}

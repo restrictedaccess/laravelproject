@@ -1,0 +1,51 @@
+"013": {
+  "current": "013",
+  "next": "017",
+  "main": {
+    "id": "drinking_ever",
+    "type": "question",
+    "group": "Alcoholic",
+    "title": "",
+    "label": "At any time in your life, did you ever drink alcohol once a month or more?",
+    "help": "",
+    "image": "icon-alcoholic",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "",
+      "logical": {
+        "0": "paintDepend",
+        "1": "destroyDepend"
+      },
+      "list": [
+        "Yes",
+        "No"
+      ]
+    }
+  },
+  "depend": [
+    {
+      "id": "drinking_current",
+      "type": "question",
+      "group": "Smoke",
+      "title": "",
+      "label": "Do you currently drink alcohol once a month or more?",
+      "help": "",
+      "image": "",
+      "logical": null,
+      "answers": {
+        "template": "radio-circle",
+        "default": null,
+        "suffix": "",
+        "logical": {
+          "0": "skippable-015",
+          "1": "skippable-017"
+        },
+        "list": [
+          "Yes",
+          "No"
+        ]
+      }
+    }
+  ]
+}

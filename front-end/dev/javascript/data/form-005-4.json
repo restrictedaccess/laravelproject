@@ -1,0 +1,30 @@
+"005-4": {
+  "current": "005-4",
+  "next": "006",
+  "main": {
+    "id": "cognitive_art",
+    "type": "question",
+    "group": "Art",
+    "title": "Producing Art",
+    "label": "In a week, how many days do you spend at least 20 minutes?",
+    "help": "Ex) creative writing, painting, or playing an instrument",
+    "image": "icon-art",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Days",
+      "logical": null,
+      "list": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "depend": []
+}

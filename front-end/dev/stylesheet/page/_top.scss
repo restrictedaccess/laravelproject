@@ -1,0 +1,152 @@
+.hero {
+  min-height: 54.2rem;
+  text-align: center;
+  padding-top: 2rem;
+  background-size: cover;
+  background-image: url("../images/background/background-top.png");
+  .main__logo {
+    text-align: center;
+    .top__logo {
+      width: 18.7rem;
+      height: 2.7rem;
+      margin: 0 auto;
+    }
+  }
+  .top__caption {
+    font-size: 2.65rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.04em;
+    color: map-get($global-color, accent);
+    font-family: $font-family-c;
+    margin-top: 1.3rem;
+  }
+  .top__caption--semibold {
+    font-family: $font-family-g;
+  }
+  .risk__reduction {
+    margin-top: 24.1rem;
+    .risk__reduction__button {
+      margin-top: 4.6rem;
+      padding-bottom: 0.8rem;
+    }
+  }
+}
+
+.risk__reduction__title {
+  font-family: $font-family-e;
+  font-size: 1.9rem;
+  line-height: 2.1rem;
+  letter-spacing: 0.06em;
+  color: map-get($global-color, primary);
+  margin-bottom: 2rem;
+}
+
+.page-top {
+  background-repeat: no-repeat;
+  margin-top: 0;
+  margin-bottom: 8rem;
+  .describe__inner,
+  .figures__detail__title,
+  .alzheimers__disease__title,
+  .reference__sources__list {
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.06em;
+    color: map-get($global-color, primary);
+    margin-bottom: 2rem;
+    font-family: $font-family-d;
+    .describe__inner--semibold {
+      font-family: $font-family-g;
+      color: map-get($global-color, accent);
+    }
+    .describe__link {
+      text-decoration: underline;
+    }
+  }
+  .figures__detail__title {
+    line-height: 2.6rem;
+    font-family: $font-family-e;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+  }
+  .figures__detail__inner {
+    margin-bottom: 2.8rem;
+  }
+  .alzheimers__disease__title {
+    font-size: 2.4rem;
+    line-height: 2.7rem;
+    font-family: $font-family-e;
+    text-transform: uppercase;
+    padding-top: 1.2rem;
+    margin-bottom: 2.8rem;
+  }
+  .risk__reduction__content__title {
+    font-family: $font-family-g;
+    color: map-get($global-color, primary);
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+  .reference__sources {
+    margin-bottom: 2.8rem;
+    .reference__sources__list {
+      font-size: 1.2rem;
+      line-height: 1.7rem;
+      margin-bottom: 0;
+    }
+  }
+  .risk__reduction__content {
+    margin-top: 0.5rem;
+    .risk__reduction_chart {
+      padding-top: 1.3rem;
+      margin-bottom: 2.2rem;
+      text-align: center;
+      .risk__reduction_img{
+        margin: 0 auto;
+      }
+    }
+  }
+  .block__start {
+    text-align: center;
+    .risk__reduction__title{
+      font-family: $font-family-d;
+    }
+  }
+}
+
+.block__footer {
+  margin-top: 3rem;
+  text-align: center;
+  background-color: map-get($global-color, primary);
+  padding: 2rem;
+  margin: 0 auto;
+  .block__footer__link {
+    font-size: 1.7rem;
+    line-height: 5.5rem;
+    display: block;
+    text-decoration-color: map-get($global-color, c);
+    color: map-get($global-color, c);
+    letter-spacing: 0.06rem;
+    font-family: $font-family-d;
+    text-decoration: underline;
+    &.feedback {
+      @include border-radius(0.5rem);
+      margin: 0 auto;
+      text-align: center;
+      width: 12.5rem;
+      height: 5rem;
+      line-height: 4.7rem;
+      text-decoration: none;
+      margin-top: 2rem;
+      margin-bottom: 2.2rem;
+      border: 0.1rem solid map-get($global-color, c);
+    }
+    &.copyright {
+      text-decoration: none;
+      font-size: 1.35rem;
+      line-height: 2rem;
+      margin-top: 3.5rem;
+    }
+  }
+}

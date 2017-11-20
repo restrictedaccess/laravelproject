@@ -1,0 +1,306 @@
+@charset "UTF-8";
+/* CSS Document */
+@media screen and (max-width: 840px) {
+
+.sp{
+	display:block;
+}
+.pc{
+	display:none;
+}
+.spi{
+	display:inline-block;
+}
+.pci{
+	display:none;
+}
+td.pc,th.pc{
+	display:none;
+}
+td.sp,th.sp{
+	display:table-cell;
+}
+
+body{
+	font-size:12px;
+	-webkit-text-size-adjust: 100%;
+	word-break: break-all;
+}
+
+.header .headline{
+	width:100%;
+	float:none;
+}
+.header .headline h1{
+	padding:6px 0 8px;
+	font-size:22px;
+}
+.header .lmenu{
+	position:absolute;
+	top:0px;
+	left:10px;
+	font-weight:bold;
+	font-size:18px;
+	padding:12px 0 0 0;
+	font-weight:bold;
+}
+.header .rmenu{
+	position:absolute;
+	top:0px;
+	right:20px;
+	font-weight:bold;
+	padding:10px 0 0 0;
+}
+.header .rmenu .menubt{
+	transform: scale( 1.5 , 1 );
+	-moz-transform:    scale( 1.5, 1 );  /* Firefox */
+	-webkit-transform: scale( 1.5, 1 );  /* Chrome,Safari */
+	-o-transform:      scale( 1.5, 1 );  /* Opera */
+	-ms-transform:     scale( 1.5, 1 );  /* IE */
+	transform:         scale( 1.5, 1 );  /* CSS3 */
+	font-size:18px;
+	cursor:pointer;
+}
+.header .rmenu .bell{
+	position:absolute;
+	top:0;
+	right:30px;
+	width:30px;
+}
+#popBox1{
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:1;
+}
+#popBox1 .rap{
+	z-index:2;
+	width:220px;
+	position:absolute;
+	right:10px;
+	top:45px;
+	border:1px #CCCCCC solid;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	background:#FFFFFF;
+}
+#popBox1 .rap .arrow{
+	z-index:3;
+	position:absolute;
+	right:10px;
+	top:-10px;
+	width: 0;
+	height: 0;
+	border-bottom: 9px solid #CCCCCC; 
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+}
+#popBox1 .rap .head{
+	background:#FFF;
+	padding:5px 10px;
+}
+
+#popBox1 .rap .loginimg{
+	float:left;
+}
+#popBox1 .rap .loginname{
+	border:none;
+	padding:7px 0 0 5px;
+	color:#333333;
+}
+#popBox1 .rap .logout{
+	color:#333333;
+	text-align:right;
+	float:none;
+	padding:3px 5px;
+}
+#popBox1 .rap .logout a{
+	color:#666666;
+}
+select{
+	max-width:100%;
+}
+.mainRap{
+	padding:0;
+}
+.calendar2 select {
+  border-radius: 0;
+  border:none;
+  border-top: 1px #CCCCCC solid;
+  margin: 0;
+  padding: 0 10px;
+  background: none transparent;
+  vertical-align: middle;
+}
+
+.copyright{
+	font-size:11px;
+}
+
+.menu{
+	display:none;
+}
+table.table_qareg th,table.table_qareg td{
+	padding:5px;
+}
+table.table_userm th,table.table_userm td{
+	padding:5px;
+}
+.calendar2 p{
+	font-size:20px;
+}
+.calendar2 .l {
+	padding:0 5px;
+}
+.calendar2 .r {
+	padding:0 5px;
+}
+.calendar2 table {
+	font-size:15px;
+}
+.calendar2 table p{
+	font-size:15px;
+}
+
+.calendar2 .rei {
+	font-size:12px;
+}
+
+.table_qareg .stext{
+	padding:3px;
+	width:100px;
+}
+.table_qareg .mtext{
+	padding:3px;
+	width:50%;
+}
+.table_qareg .ltext{
+	padding:3px;
+	width:98%;
+}
+.table_qareg .password{
+	padding:3px;
+	width:50%;
+}
+.table_qareg .tel{
+	padding:3px;
+	width:70px;
+}
+.table_qareg select{
+	padding:3px;
+}
+.table_qareg textarea{
+	padding:3px;
+	width:98%;
+}
+.table_qareg .time{
+	padding:3px;
+	width:60px;
+}
+.table_qareg .date{
+	padding:3px;
+	width:120px;
+}
+.table_qareg .percent{
+	padding:3px;
+	width:50px;
+}
+.btn {
+	font-size:22px;
+    padding: 4px 20px;
+}
+#footer{
+	font-size:13px;
+}
+#popBox .fllCalendarBox{
+	width:94%;
+	margin:auto;
+}
+#popBox .fllCalendarBox2{
+	width:94%;
+	margin:auto;
+}
+.smhidden{
+	display:none;
+}
+.calendar p{
+	font-size:12px;
+}
+.serchBox table td p{
+	font-size:12px;
+}
+.btnBox .btn,.btnBox .btn2{
+	font-size:18px;
+	padding:5px 15px;
+}
+#popBox{
+	height:100%;
+	padding:0;
+}
+#popBox #form1{
+	height:100%;
+	padding:0;
+}
+#popBox #form1 .formBox{
+	height:70%;
+	overflow:auto;
+	padding:0;
+}
+#popBox #form1 .btnBox{
+	padding:15px 0 0 0;
+}
+
+.stbox .lbox{
+	float:none;
+	width:100%;
+}
+.stbox .rbox{
+	float:none;
+	width:100%;
+}
+
+#mainBox .profile .lbox{
+	float:none;
+	width:50%;
+	margin:auto;
+	text-align:center;
+}
+#mainBox .profile table{
+	float:none;
+	width:98%;
+	border-left:none;
+	margin-right:0;
+	font-size:14px;
+}
+.rangeBox{
+	width:90%;
+	margin:auto;
+}
+#sortable1 select{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    border-radius:3px;
+	padding:3px;
+    line-height: 100%;
+    font-size: 11px;
+    color: #FFFFFF;
+    background:#25cc9e;
+    border: none;
+    cursor: pointer;
+}
+.commentBox textarea{
+	width:230px;
+}
+
+
+
+
+
+
+
+}

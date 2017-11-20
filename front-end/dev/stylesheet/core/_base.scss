@@ -1,0 +1,52 @@
+html, body {
+  height: 100%;
+}
+html {
+  font-size:    62.5%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  @include word-wrap();
+  position: relative;
+  background: map-get($global-color, c);
+  color: map-get($global-color, a);
+  font-size: 1.4rem;
+  line-height: 1.4;
+  font-family: $font-family-c;
+  height: 100%;
+  & > .page {
+    height: auto;
+  }
+}
+select, button, input, textarea {
+  -webkit-appearance: none;
+  outline: 0;
+  font-family: inherit;
+}
+input[disabled] {
+  opacity: 1;
+}
+a {
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+a:hover{
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+// Global page customized
+.content__padded {
+  margin: 5vh 8vw;
+}

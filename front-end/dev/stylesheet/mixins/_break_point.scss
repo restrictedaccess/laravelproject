@@ -1,0 +1,6 @@
+// break point
+@mixin break-point-a {
+  @media (max-width: map-get($global-width, a)) {
+    @content;
+  }
+}

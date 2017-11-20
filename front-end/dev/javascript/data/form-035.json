@@ -1,0 +1,30 @@
+"035": {
+  "current": "035",
+  "next": "",
+  "main": {
+    "id": "ethnicity",
+    "type": "question",
+    "group": "Race or Ethnicity",
+    "title": "",
+    "label": "What is your race or ethnicity?",
+    "help": "",
+    "image": "icon-race",
+    "answers": {
+      "template": "radio-regular",
+      "default": null,
+      "suffix": "",
+      "logical": null,
+      "list": [
+        "African or African American",
+        "American Indian or Native Alaskan",
+        "Arabic or Middle Eastern",
+        "Asian",
+        "Caucasian (Non-Hispanic White)",
+        "Hispanic/Latino",
+        "Pacific Islander",
+        "Other"
+      ]
+    }
+  },
+  "depend": []
+}

@@ -1,0 +1,488 @@
+---
+layout: layout.hbs
+---
+<div class="content">
+  <div class="content__padded page__score">
+    <div class="result">
+      <h3 class="result__title">Anna’s</h3>
+      <h5 class="result__info">Risk Reduction Score</h5>
+    </div>
+    <div class="count__up">
+      <h3 class="count__up__inner">
+        <span id="js-score-up" data-score="60"></span>
+        <span>/100</span>
+      </h3>
+    </div>
+    <div class="progressbar__score">
+      <div class="progress">
+        <div class="progress__bar">
+          <div class="progress__bar__current__level">
+            <span class="level__title">Poor</span>
+            <span class="level__title">Fair</span>
+            <span class="level__title">Average</span>
+            <span class="level__title">Good</span>
+            <span class="level__title">Excellent!</span>
+          </div>
+          <div class="progress__bar__current poor">
+            <div class="percent">
+              <span>&nbsp;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="summary">
+      <div class="summary__note">
+        <h5 class="summary__note__content">Brain performance decreases very year. Below, you will find lifestyle areas where you are doing well and places where you can improve.</h5>
+      </div>
+      <div class="summary__part ">
+        <div class="summary__part__info summary__part--activity">
+          <h3 class="summary__part__title summary__part__title--activity"><i class="icon-score icons_activity">&nbsp;</i>activity</h3>
+          <div class="main__content main__content--activity">
+            <canvas id="activity" data-value="100" width="112px" height="112px"></canvas>
+            <div class="detail">
+              <h5 class="detail__label detail__label--excellent"><i class="icon-score icons_excellent">&nbsp;</i>Excellent!</h5>
+              <a href="#" class="see_detail" type="button">See detail</a>
+            </div>
+            <div class="detail__information detail__information--activity">
+              <div class="detail__information__list">
+                <div class="topic">
+                  <div class="topic__icons">
+                    <h5 class="topic__title topic__title--fish"><i class="icon-score icons_fish">&nbsp;</i>Fish</h5>
+                    <span class="topic__rating topic__rating--good"><i class="icon-score icons_sgood">&nbsp;</i>Good</span>
+                  </div>
+                  <div class="topic__content accordion">
+                    <p class="advice">Keep going to take fish <span class="advice--small">(not including fried fish)</span> over 3 times in <span class="
+                    advice--small">a week.</span></p>
+                    <h6 class="reason"><i class="icon-score icons_pen">&nbsp;</i>Reason:</h6>
+                    <p class="reason__content">Many fish (like tuna and salmon) are rich in fatty acids (especially omega-3) that help reduce the risk developing brain health conditions like dementia. Fried fish do not have the same benefits.</p>
+                    <h6 class="tips"><i class="icon-score icons_tip">&nbsp;</i>Tips:</h6>
+                    <ul class="tip__list">
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Choose fish caught from deep sea over farm-raised fish. Deep sea/ wild-caught fish have more omega - 3 fats than farm-raised fish.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Include fish in a variety of dishes as tuna sandwich, salmon burger, fish tacos, in burritos and as fish stew</p>
+                        <p class="tip__list--detail">Adding a variety of healthy herbs and spices can improve the taste of the fish. Fennel, dill, turmeric, garlic, or lemon peels add a distinct taste to the fish</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Choose fish caught from deep sea over farm-raised fish. Deep sea/ wild-caught fish have more omega - 3 fats than farm-raised fish.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">If you don't like fish flavor, chop them into fine pieces and incorporate into green salads, quinoa or couscous salads, pasta dishes along with favorite tomato sauce/pasta, or cheese toppings.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Marinading fish prior to cooking helps to mask the strong flavors. Mustard sauce or soy sauce are good options to use in marinades that helps to mask the strong flavors of varieties like salmon.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Top omega- 3 rich fish sources – salmon, sardine, herring, cod, roe, anchovy, black & red caviar, and mackarel are tasty varieties. Others types that provide moderate amounts of omega- 3 fats include oysters, bass, capers, and sable fish</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Incorporating quality fish oils like cod fish oil, menhaden fish oil, herring fish oil, krill oil etc are great ways to include omega 3 rich fish</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn__toggle">
+                    <a href="#" class="drop__toggle">Hide reason/advise</a>
+                  </div>
+                </div>
+                <div class="topic">
+                  <div class="topic__icons">
+                    <h5 class="topic__title topic__title--vegetables"><i class="icon-score icons_vegetables">&nbsp;</i>Vegetables </h5>
+                    <span class="topic__rating topic__rating--fair"><i class="icon-score icons_sfair">&nbsp;</i>Fair</span>
+                  </div>
+                  <div class="topic__content accordion">
+                    <p class="advice"><span class="advice--small">Should take Raw or cooked</span> vegetables over 5 times <span class="advice--small">in a week</span></p>
+                    <h6 class="reason"><i class="icon-score icons_pen">&nbsp;</i>Reason:</h6>
+                    <p class="reason__content">Eating plenty of vegetables, which are rich in important nutrients like antioxidants, will help reduce your risk for brain health conditions like dementia.</p>
+                    <h6 class="tips"><i class="icon-score icons_tip">&nbsp;</i>Tips:</h6>
+                    <ul class="tip__list">
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Take baby carrot, celery sticks for snacks instead of processed snack varieties. They are crunchy, and are packed with vitamins.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Include dried fruits into your snack routine. They are full of vitamins, minerals and fibers.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Include at least one vegetable or fruit as a mandatory part of your breakfast</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Green smoothies are a great way to pack most leafy greens and vegetables in a single serving.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Keep a fruit salad or a veggie platter prepared ready in the refrigerator. This helps save time and encourages to eat healthy appetizers while you cook meals</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Strive to prepare home cooked meals, this will help incorporate more varieties of vegetables</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Rotate your vegetables weekly, so you get more nutrients from a wide variety of selection.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Keep fresh fruits as a table décor, it encourages to choose healthy eating as part of your routine</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Soups and pizzas are a great way to incorporate more veggies into your menu</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Make a veggie kebob with squash, bell pepper, carrots, zucchini, and mushrooms</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Enjoy vegetables both raw and grilled depending on your taste needs</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Prepare a big batch of stir fry for lunch and save the left over to prepare a veggie muffin or casserole with egg and cheese for breakfast.</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn__toggle">
+                    <a href="#" class="drop__toggle">Hide reason/advise</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="summary__part__info summary__part--diet">
+          <h3 class="summary__part__title summary__part__title--diet"><i class="icon-score icons_diet">&nbsp;</i>diet</h3>
+          <div class="main__content main__content--diet">
+            <canvas id="diet" data-value="19" width="112px" height="112px"></canvas>
+            <div class="detail">
+              <h5 class="detail__label detail__label--poor"><i class="icon-score icons_poor">&nbsp;</i>Poor</h5>
+              <a href="#" class="see_detail" type="button">Hide detail</a>
+            </div>
+            <div class="detail__information detail__information--diet">
+              <div class="detail__information__list">
+                <div class="topic">
+                  <div class="topic__icons">
+                    <h5 class="topic__title topic__title--fish"><i class="icon-score icons_fish">&nbsp;</i>Fish</h5>
+                    <span class="topic__rating topic__rating--good"><i class="icon-score icons_sgood">&nbsp;</i>Good</span>
+                  </div>
+                  <div class="topic__content accordion">
+                    <p class="advice">Keep going to take fish <span class="advice--small">(not including fried fish)</span> over 3 times in <span class="
+                    advice--small">a week.</span></p>
+                    <h6 class="reason"><i class="icon-score icons_pen">&nbsp;</i>Reason:</h6>
+                    <p class="reason__content">Many fish (like tuna and salmon) are rich in fatty acids (especially omega-3) that help reduce the risk developing brain health conditions like dementia. Fried fish do not have the same benefits.</p>
+                    <h6 class="tips"><i class="icon-score icons_tip">&nbsp;</i>Tips:</h6>
+                    <ul class="tip__list">
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Choose fish caught from deep sea over farm-raised fish. Deep sea/ wild-caught fish have more omega - 3 fats than farm-raised fish.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Include fish in a variety of dishes as tuna sandwich, salmon burger, fish tacos, in burritos and as fish stew</p>
+                        <p class="tip__list--detail">Adding a variety of healthy herbs and spices can improve the taste of the fish. Fennel, dill, turmeric, garlic, or lemon peels add a distinct taste to the fish</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Choose fish caught from deep sea over farm-raised fish. Deep sea/ wild-caught fish have more omega - 3 fats than farm-raised fish.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">If you don't like fish flavor, chop them into fine pieces and incorporate into green salads, quinoa or couscous salads, pasta dishes along with favorite tomato sauce/pasta, or cheese toppings.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Marinading fish prior to cooking helps to mask the strong flavors. Mustard sauce or soy sauce are good options to use in marinades that helps to mask the strong flavors of varieties like salmon.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Top omega- 3 rich fish sources – salmon, sardine, herring, cod, roe, anchovy, black & red caviar, and mackarel are tasty varieties. Others types that provide moderate amounts of omega- 3 fats include oysters, bass, capers, and sable fish </p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Incorporating quality fish oils like cod fish oil, menhaden fish oil, herring fish oil, krill oil etc are great ways to include omega 3 rich fish</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn__toggle">
+                    <a href="#" class="drop__toggle">Hide reason/advise</a>
+                  </div>
+                </div>
+                <div class="topic">
+                  <div class="topic__icons">
+                    <h5 class="topic__title topic__title--vegetables"><i class="icon-score icons_vegetables">&nbsp;</i>Vegetables </h5>
+                    <span class="topic__rating topic__rating--fair"><i class="icon-score icons_sfair">&nbsp;</i>Fair</span>
+                  </div>
+                  <div class="topic__content accordion">
+                    <p class="advice"><span class="advice--small">Should take Raw or cooked</span> vegetables over 5 times <span class="advice--small">in a week</span></p>
+                    <h6 class="reason"><i class="icon-score icons_pen">&nbsp;</i>Reason:</h6>
+                    <p class="reason__content">Eating plenty of vegetables, which are rich in important nutrients like antioxidants, will help reduce your risk for brain health conditions like dementia.</p>
+                    <h6 class="tips"><i class="icon-score icons_tip">&nbsp;</i>Tips:</h6>
+                    <ul class="tip__list">
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Take baby carrot, celery sticks for snacks instead of processed snack varieties. They are crunchy, and are packed with vitamins.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Include dried fruits into your snack routine. They are full of vitamins, minerals and fibers.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Include at least one vegetable or fruit as a mandatory part of your breakfast</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Green smoothies are a great way to pack most leafy greens and vegetables in a single serving.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Keep a fruit salad or a veggie platter prepared ready in the refrigerator. This helps save time and encourages to eat healthy appetizers while you cook meals</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Strive to prepare home cooked meals, this will help incorporate more varieties of vegetables</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Rotate your vegetables weekly, so you get more nutrients from a wide variety of selection.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Keep fresh fruits as a table décor, it encourages to choose healthy eating as part of your routine</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Soups and pizzas are a great way to incorporate more veggies into your menu</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Make a veggie kebob with squash, bell pepper, carrots, zucchini, and mushrooms</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Enjoy vegetables both raw and grilled depending on your taste needs</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Prepare a big batch of stir fry for lunch and save the left over to prepare a veggie muffin or casserole with egg and cheese for breakfast.</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn__toggle">
+                    <a href="#" class="drop__toggle">Hide reason/advise</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="summary__part__info summary__part--lifestyle">
+          <h3 class="summary__part__title summary__part__title--lifestyle"><i class="icon-score icons_lifestyle">&nbsp;</i>lifestyle</h3>
+          <div class="main__content main__content--lifestyle">
+            <canvas id="lifestyle" data-value="70" width="112px" height="112px"></canvas>
+            <div class="detail">
+              <h5 class="detail__label detail__label--good"><i class="icon-score icons_good">&nbsp;</i>Good!</h5>
+              <a href="#" class="see_detail" type="button">See detail</a>
+            </div>
+            <div class="detail__information detail__information--lifestyle">
+              <div class="detail__information__list">
+                <div class="topic">
+                  <div class="topic__icons">
+                    <h5 class="topic__title topic__title--fish"><i class="icon-score icons_fish">&nbsp;</i>Fish</h5>
+                    <span class="topic__rating topic__rating--good"><i class="icon-score icons_sgood">&nbsp;</i>Good</span>
+                  </div>
+                  <div class="topic__content accordion">
+                    <p class="advice">Keep going to take fish <span class="advice--small">(not including fried fish)</span> over 3 times in <span class="
+                    advice--small">a week.</span></p>
+                    <h6 class="reason"><i class="icon-score icons_pen">&nbsp;</i>Reason:</h6>
+                    <p class="reason__content">Many fish (like tuna and salmon) are rich in fatty acids (especially omega-3) that help reduce the risk developing brain health conditions like dementia. Fried fish do not have the same benefits.</p>
+                    <h6 class="tips"><i class="icon-score icons_tip">&nbsp;</i>Tips:</h6>
+                    <ul class="tip__list">
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Choose fish caught from deep sea over farm-raised fish. Deep sea/ wild-caught fish have more omega - 3 fats than farm-raised fish.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Include fish in a variety of dishes as tuna sandwich, salmon burger, fish tacos, in burritos and as fish stew</p>
+                        <p class="tip__list--detail">Adding a variety of healthy herbs and spices can improve the taste of the fish. Fennel, dill, turmeric, garlic, or lemon peels add a distinct taste to the fish</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Choose fish caught from deep sea over farm-raised fish. Deep sea/ wild-caught fish have more omega - 3 fats than farm-raised fish.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">If you don't like fish flavor, chop them into fine pieces and incorporate into green salads, quinoa or couscous salads, pasta dishes along with favorite tomato sauce/pasta, or cheese toppings.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Marinading fish prior to cooking helps to mask the strong flavors. Mustard sauce or soy sauce are good options to use in marinades that helps to mask the strong flavors of varieties like salmon.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Top omega- 3 rich fish sources – salmon, sardine, herring, cod, roe, anchovy, black & red caviar, and mackarel are tasty varieties. Others types that provide moderate amounts of omega- 3 fats include oysters, bass, capers, and sable fish </p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Incorporating quality fish oils like cod fish oil, menhaden fish oil, herring fish oil, krill oil etc are great ways to include omega 3 rich fish</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn__toggle">
+                    <a href="#" class="drop__toggle">Hide reason/advise</a>
+                  </div>
+                </div>
+                <div class="topic">
+                  <div class="topic__icons">
+                    <h5 class="topic__title topic__title--vegetables"><i class="icon-score icons_vegetables">&nbsp;</i>Vegetables </h5>
+                    <span class="topic__rating topic__rating--fair"><i class="icon-score icons_sfair">&nbsp;</i>Fair</span>
+                  </div>
+                  <div class="topic__content accordion">
+                    <p class="advice"><span class="advice--small">Should take Raw or cooked</span> vegetables over 5 times <span class="advice--small">in a week</span></p>
+                    <h6 class="reason"><i class="icon-score icons_pen">&nbsp;</i>Reason:</h6>
+                    <p class="reason__content">Eating plenty of vegetables, which are rich in important nutrients like antioxidants, will help reduce your risk for brain health conditions like dementia.</p>
+                    <h6 class="tips"><i class="icon-score icons_tip">&nbsp;</i>Tips:</h6>
+                    <ul class="tip__list">
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Take baby carrot, celery sticks for snacks instead of processed snack varieties. They are crunchy, and are packed with vitamins.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Include dried fruits into your snack routine. They are full of vitamins, minerals and fibers.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Include at least one vegetable or fruit as a mandatory part of your breakfast</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Green smoothies are a great way to pack most leafy greens and vegetables in a single serving.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Keep a fruit salad or a veggie platter prepared ready in the refrigerator. This helps save time and encourages to eat healthy appetizers while you cook meals</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Strive to prepare home cooked meals, this will help incorporate more varieties of vegetables</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Rotate your vegetables weekly, so you get more nutrients from a wide variety of selection.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Keep fresh fruits as a table décor, it encourages to choose healthy eating as part of your routine</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Soups and pizzas are a great way to incorporate more veggies into your menu</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Make a veggie kebob with squash, bell pepper, carrots, zucchini, and mushrooms</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Enjoy vegetables both raw and grilled depending on your taste needs</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Prepare a big batch of stir fry for lunch and save the left over to prepare a veggie muffin or casserole with egg and cheese for breakfast.</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn__toggle">
+                    <a href="#" class="drop__toggle">Hide reason/advise</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="summary__part__info summary__part--medical">
+          <h3 class="summary__part__title summary__part__title--medical"><i class="icon-score icons_medical">&nbsp;</i>Medical Health control</h3>
+          <div class="main__content main__content--medical">
+            <canvas id="medical" data-value="30" width="112px" height="112px"></canvas>
+            <div class="detail">
+              <h5 class="detail__label detail__label--fair"><i class="icon-score icons_fair">&nbsp;</i>Fair</h5>
+              <a href="#" class="see_detail" type="button">See detail</a>
+            </div>
+            <div class="detail__information detail__information--medical">
+              <div class="detail__information__list">
+                <div class="topic">
+                  <div class="topic__icons">
+                    <h5 class="topic__title topic__title--fish"><i class="icon-score icons_fish">&nbsp;</i>Fish</h5>
+                    <span class="topic__rating topic__rating--good"><i class="icon-score icons_sgood">&nbsp;</i>Good</span>
+                  </div>
+                  <div class="topic__content accordion">
+                    <p class="advice">Keep going to take fish <span class="advice--small">(not including fried fish)</span> over 3 times in <span class="
+                    advice--small">a week.</span></p>
+                    <h6 class="reason"><i class="icon-score icons_pen">&nbsp;</i>Reason:</h6>
+                    <p class="reason__content">Many fish (like tuna and salmon) are rich in fatty acids (especially omega-3) that help reduce the risk developing brain health conditions like dementia. Fried fish do not have the same benefits.</p>
+                    <h6 class="tips"><i class="icon-score icons_tip">&nbsp;</i>Tips:</h6>
+                    <ul class="tip__list">
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Choose fish caught from deep sea over farm-raised fish. Deep sea/ wild-caught fish have more omega - 3 fats than farm-raised fish.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Include fish in a variety of dishes as tuna sandwich, salmon burger, fish tacos, in burritos and as fish stew</p>
+                        <p class="tip__list--detail">Adding a variety of healthy herbs and spices can improve the taste of the fish. Fennel, dill, turmeric, garlic, or lemon peels add a distinct taste to the fish</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Choose fish caught from deep sea over farm-raised fish. Deep sea/ wild-caught fish have more omega - 3 fats than farm-raised fish.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">If you don't like fish flavor, chop them into fine pieces and incorporate into green salads, quinoa or couscous salads, pasta dishes along with favorite tomato sauce/pasta, or cheese toppings.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Marinading fish prior to cooking helps to mask the strong flavors. Mustard sauce or soy sauce are good options to use in marinades that helps to mask the strong flavors of varieties like salmon.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Top omega- 3 rich fish sources – salmon, sardine, herring, cod, roe, anchovy, black & red caviar, and mackarel are tasty varieties. Others types that provide moderate amounts of omega- 3 fats include oysters, bass, capers, and sable fish </p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Incorporating quality fish oils like cod fish oil, menhaden fish oil, herring fish oil, krill oil etc are great ways to include omega 3 rich fish</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn__toggle">
+                    <a href="#" class="drop__toggle">Hide reason/advise</a>
+                  </div>
+                </div>
+                <div class="topic">
+                  <div class="topic__icons">
+                    <h5 class="topic__title topic__title--vegetables"><i class="icon-score icons_vegetables">&nbsp;</i>Vegetables </h5>
+                    <span class="topic__rating topic__rating--fair"><i class="icon-score icons_sfair">&nbsp;</i>Fair</span>
+                  </div>
+                  <div class="topic__content accordion">
+                    <p class="advice"><span class="advice--small">Should take Raw or cooked</span> vegetables over 5 times <span class="advice--small">in a week</span></p>
+                    <h6 class="reason"><i class="icon-score icons_pen">&nbsp;</i>Reason:</h6>
+                    <p class="reason__content">Eating plenty of vegetables, which are rich in important nutrients like antioxidants, will help reduce your risk for brain health conditions like dementia.</p>
+                    <h6 class="tips"><i class="icon-score icons_tip">&nbsp;</i>Tips:</h6>
+                    <ul class="tip__list">
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Take baby carrot, celery sticks for snacks instead of processed snack varieties. They are crunchy, and are packed with vitamins.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Include dried fruits into your snack routine. They are full of vitamins, minerals and fibers.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Include at least one vegetable or fruit as a mandatory part of your breakfast</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Green smoothies are a great way to pack most leafy greens and vegetables in a single serving.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Keep a fruit salad or a veggie platter prepared ready in the refrigerator. This helps save time and encourages to eat healthy appetizers while you cook meals</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Strive to prepare home cooked meals, this will help incorporate more varieties of vegetables</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Rotate your vegetables weekly, so you get more nutrients from a wide variety of selection.</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Keep fresh fruits as a table décor, it encourages to choose healthy eating as part of your routine</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Soups and pizzas are a great way to incorporate more veggies into your menu</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Make a veggie kebob with squash, bell pepper, carrots, zucchini, and mushrooms</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Enjoy vegetables both raw and grilled depending on your taste needs</p>
+                      </li>
+                      <li class="tip__list__content">
+                        <p class="tip__list--detail">Prepare a big batch of stir fry for lunch and save the left over to prepare a veggie muffin or casserole with egg and cheese for breakfast.</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn__toggle">
+                    <a href="#" class="drop__toggle">Hide reason/advise</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="retake__test">
+      <a href="#" type="button" class="btn btn__regular btn__regular--retake ">Retake test</a>
+    </div>
+    <ul class="social">
+      <li class="social__item"><i class="icons_face">&nbsp;</i></li>
+      <li class="social__item"><i class="icons_twiter">&nbsp;</i></li>
+      <li class="social__item"><i class="icons_in">&nbsp;</i></li>
+      <li class="social__item"><i class="icons_gg">&nbsp;</i></li>
+    </ul>
+  </div>
+  <div class="block__footer">
+    <a href="#" class="block__footer__link feedback">FEEDBACK</a>
+    <a href="#" class="block__footer__link">References</a>
+    <a href="#" class="block__footer__link">Terms</a>
+    <a href="http://www.pegara.com/" target="_blank" class="block__footer__link">About us</a>
+    <a href="http://www.pegara.com/" target="_blank" class="block__footer__link">Contact us</a>
+    <a href="#" class="block__footer__link">Privacy policy</a>
+    <p class="block__footer__link copyright">Copyright &copy; 2015 Pegara, Inc. All Rights Reserved.</p>
+  </div>
+</div>

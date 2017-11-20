@@ -1,0 +1,21 @@
+/*border*/
+
+@mixin bd ($width, $style, $color) {
+  border: $width $style $color;
+}
+
+@mixin bdt($width, $style, $color) {
+  border-top: $width $style $color;
+}
+
+@mixin bdr($width, $style, $color) {
+  border-right: $width $style $color;
+}
+
+@mixin bdb($width, $style, $color) {
+  border-bottom: $width $style $color;
+}
+
+@mixin bdl($width, $style, $color) {
+  border-left: $width $style $color;
+}

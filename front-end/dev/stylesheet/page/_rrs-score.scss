@@ -1,0 +1,447 @@
+.page__score {
+  text-align: center;
+  .result {
+    .result__title {
+      font-size: 2.7rem;
+      line-height: 3.2rem;
+      letter-spacing: -0.01em;
+      color: map-get($global-color, a);
+      font-family: $font-family-d;
+      margin-bottom: 0.5rem;
+    }
+    .result__info {
+      font-size: 2.2rem;
+      line-height: 2.7rem;
+      letter-spacing: 0.04em;
+      margin: 0;
+      color: map-get($global-color, a);
+      font-family: $font-family-c;
+    }
+  }
+  .count__up {
+    span {
+      font-size: 3.3rem;
+      letter-spacing: 0;
+      color: map-get($global-color, primary);
+      font-family: $font-family-c;
+    }
+    #js-score-up {
+      font-size: 10rem;
+      letter-spacing: 0.04em;
+      margin-right: -0.5rem;
+    }
+    .count__up__inner {
+      margin-bottom: -0.5rem;
+      ;
+    }
+  }
+  .summary {
+    padding-bottom: 2rem;
+    .summary__note__content {
+      margin-bottom: 0;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      letter-spacing: -0.01;
+      color: map-get($global-color, a);
+      font-family: $font-family-d;
+      margin-top: 1.6rem;
+      padding-bottom: 1.8rem;
+      border-bottom: 0.1rem solid map-get($global-color, d);
+    }
+    .summary__part {
+      .summary__part__info {
+        min-height: 19.7rem;
+        padding-top: 2rem;
+        text-align: left;
+        border-bottom: 0.1rem solid map-get($global-color, d);
+        &.summary__part--activity,
+        &.summary__part--diet,
+        &.summary__part--lifestyle,
+        &.summary__part--medical {
+          #activity,
+          #diet,
+          #life_style,
+          #medical {
+            width: 11.2rem;
+            height: 11.2rem;
+            margin-left: 1rem;
+            margin-top: 1.8rem;
+          }
+        }
+        .summary__part__title {
+          font-size: 3rem;
+          line-height: 2.7rem;
+          color: map-get($global-color, j);
+          letter-spacing: -0.02em;
+          text-transform: uppercase;
+          font-family: $font-family-g;
+          text-align: left;
+          margin-bottom: 0;
+          .icon-score {
+            margin-right: 0.5rem;
+          }
+          &.summary__part__title--diet {
+            color: map-get($global-color, h);
+          }
+          &.summary__part__title--lifestyle {
+            color: map-get($global-color, e);
+          }
+          &.summary__part__title--medical {
+            color: map-get($global-color, l);
+            font-size: 2.5rem;
+            letter-spacing: -0.06em;
+          }
+        }
+        .main__content {
+          margin-left: 1.2rem;
+          border-left: 0.1rem solid transparent;
+          &.main__content--activity {
+            &.active {
+              border-color: map-get($global-color, j);
+            }
+            .topic__title {
+              color: map-get($global-color, j);
+            }
+          }
+          &.main__content--diet {
+            .topic__title {
+              color: map-get($global-color, h);
+            }
+            &.active {
+              border-color: map-get($global-color, h);
+            }
+          }
+          &.main__content--lifestyle {
+            .topic__title {
+              color: map-get($global-color, e);
+            }
+            &.active {
+              border-color: map-get($global-color, e);
+            }
+          }
+          &.main__content--medical {
+            .topic__title {
+              color: map-get($global-color, l);
+            }
+            &.active {
+              border-color: map-get($global-color, l);
+            }
+          }
+        }
+        .detail {
+          display: inline-block;
+          vertical-align: top;
+          padding-top: 0.5rem;
+          margin-left: 1.8rem;
+          .detail__label {
+            font-size: 1.7rem;
+            line-height: 3.7rem;
+            letter-spacing: -0.02rem;
+            color: map-get($global-color, y);
+            font-family: $font-family-g;
+            padding: 2rem 0 1.6rem;
+            margin: 0;
+            text-align: right;
+            &.detail__label--good {
+              color: map-get($global-color, v);
+            }
+            &.detail__label--fair {
+              color: map-get($global-color, u);
+            }
+            &.detail__label--poor {
+              color: map-get($global-color, w);
+            }
+            &.detail__label--average {
+              color: map-get($global-color, x);
+            }
+            .icon-score {
+              margin-right: 0.5rem;
+            }
+          }
+        }
+        .detail__information {
+          margin-left: 2rem;
+          padding-top: 1.5rem;
+          display: none;
+          .detail__information__list {
+            .topic {
+              padding-top: 1.5rem;
+              padding-bottom: 1.5rem;
+              font: 3rem;
+              line-height: 2.4rem;
+              letter-spacing: -0.01em;
+              font-family: $font-family-g;
+              border-top: 0.1rem solid map-get($global-color, d);
+              .topic__title {
+                font-size: 3rem;
+                line-height: 2.4rem;
+                letter-spacing: -0.01em;
+                font-family: $font-family-g;
+                display: inline-block;
+                padding: 0.2rem 3rem;
+                margin: 0;
+                padding-left: 0;
+                .icon-score {
+                  margin-right: 0.5rem;
+                }
+              }
+              .topic__rating {
+                text-align: right;
+                float: right;
+                padding-top: 0.2rem;
+                font-size: 1.7rem;
+                letter-spacing: -0.02em;
+                &.topic__rating--good {
+                  color: map-get($global-color, v);
+                }
+                &.topic__rating--fair {
+                  color: map-get($global-color, u);
+                }
+                &.topic__rating--excellent {
+                  color: map-get($global-color, y);
+                }
+                &.topic__rating--poor {
+                  color: map-get($global-color, w);
+                }
+                .icon-score {
+                  margin-right: 0.5rem;
+                }
+              }
+              .btn__toggle {
+                display: block;
+                height: 2.5rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                .drop__toggle {
+                  float: right;
+                  width: 100%;
+                }
+              }
+            }
+            .topic__content {
+              .advice {
+                font-family: $font-family-g;
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+                letter-spacing: 0;
+                color: map-get($global-color, a);
+                text-transform: uppercase;
+                margin-top: 1.6rem;
+              }
+              .advice--small {
+                font-family: $font-family-d;
+                text-transform: lowercase;
+              }
+              .reason,
+              .tips {
+                font-family: $font-family-g;
+                font-size: 2.2rem;
+                line-height: 1.7rem;
+                letter-spacing: 0.01em;
+                color: map-get($global-color, accent);
+                margin-bottom: 1.2rem;
+                .icon-score{
+                  margin-right: 0.5rem;
+                }
+              }
+              .tip__list {
+                padding-left: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .retake__test {
+    margin-top: 0.5rem;
+    .btn__regular--retake {
+      margin-bottom: 3rem;
+    }
+  }
+  .social{
+  padding: 0;
+    .social__item{
+      list-style: none;
+      display: inline-block;
+    }
+  }
+}
+
+.progressbar__score {
+  .progress {
+    margin: 0 -8vw;
+    .progress__bar {
+      @include border-radius(0);
+      height: 3.2rem;
+      width: auto;
+      .level__title {
+        position: relative;
+        width: 20%;
+        float: left;
+        font-size: 1.7rem;
+        line-height: 3.2rem;
+        color: map-get($global-color, c);
+        font-family: $font-family-g;
+        @media (max-width: 350px){
+          font-size: 1.5rem;
+        }
+      }
+      .progress__bar__current {
+        @include border-radius(0);
+        width: 100%;
+        .progress__bar__current__level {
+          width: 100%;
+          height: 3.2rem;
+          position: relative;
+        }
+        .percent {
+          span {
+            &::after {
+              @include border-radius(50%);
+              content: "";
+              right: 0.8rem;
+              left: 0.8rem;
+              top: 0.4rem;
+              border: 0.5rem solid map-get($global-color, c);
+            }
+          }
+        }
+        &.poor{
+          .percent{
+            left: 10%;
+          }
+        }
+        &.fair{
+          .percent{
+            left: 30%;
+          }
+        }
+        &.average{
+          .percent{
+            left: 50%;
+          }
+        }
+        &.good{
+          .percent{
+            left: 70%;
+          }
+        }
+        &.excellent{
+          .percent{
+            left: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.see_detail,
+.drop__toggle {
+  @include border-radius(0.5rem);
+  text-align: left;
+  padding-left: 1.3rem;
+  margin-left: 1.7rem;
+  min-width: 12rem;
+  max-width: 17rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.03em;
+  color: map-get($global-color, c);
+  font-family: $font-family-d;
+  background-color: map-get($global-color, primary);
+  display: block;
+  position: relative;
+  &:active, &:focus{
+    color: map-get($global-color, c) !important;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    margin-top: -0.3rem;
+    right: 1.3rem;
+    border: 0.6rem solid map-get($global-color, c);
+    border-color: map-get($global-color, c) transparent transparent;
+    border-width: 0.6rem 0.6rem 0.6rem 0.6rem;
+  }
+  &.active{
+    &::after{
+      border-color: transparent  transparent map-get($global-color, c);
+      margin-top: -1rem;
+    }
+  }
+}
+
+.drop__toggle {
+  &::after {
+    border-color: transparent transparent map-get($global-color, c);
+    margin-top: -0.8rem;
+  }
+  &.active{
+    &::after{
+      border-color: map-get($global-color, c) transparent  transparent;
+      margin-top: -0.1rem;
+    }
+  }
+}
+
+.reason__content,
+.tip__list--detail {
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.01em;
+  color: map-get($global-color, a);
+  font-family: $font-family-d;
+  margin-bottom: 0;
+}
+
+.tip__list--detail {
+  margin-bottom: 2.2rem;
+}
+
+.tip__list__content {
+  &:last-child {
+    .tip__list--detail {
+      margin-bottom: 1.7rem;
+    }
+  }
+}
+
+@media (width: 320px) {
+  .page__score {
+    .summary {
+      .summary__part {
+        .summary__part__info {
+          &.summary__part--activity,
+          &.summary__part--diet,
+          &.summary__part--lifestyle,
+          &.summary__part--medical {
+            #activity,
+            #diet,
+            #life_style,
+            #medical {
+              margin-left: 0;
+            }
+          }
+          .detail {
+            margin: 0;
+            padding-top: 2.5rem;
+          }
+        }
+        .summary__part__title {
+          &.summary__part__title--medical {
+            font-size: 2.2rem !important;
+          }
+        }
+      }
+    }
+  }
+  .social {
+    .social__item{
+      margin: 0.2rem 0.1rem;
+    }
+  }
+}

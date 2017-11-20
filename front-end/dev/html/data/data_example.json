@@ -1,0 +1,16 @@
+{
+  "data_example": [
+    {
+      "name":"name1",
+      "sample":"sample1"
+    },
+    {
+      "name":"name2",
+      "sample":"sample2"
+    },
+    {
+      "name":"name3",
+      "sample":"sample3"
+    }
+  ]
+}

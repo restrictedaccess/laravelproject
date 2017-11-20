@@ -1,0 +1,1332 @@
+{
+"001": {
+  "current": "001",
+  "next": "002",
+  "main": {
+    "id": "",
+    "type": "topic",
+    "group": "Habits",
+    "title": "Please answer about your <span class=\"highlight--habits\">Habits</span> in a typical week.",
+    "label": "",
+    "help": "",
+    "image": "badge-habits",
+    "answers": {
+      "template": "",
+      "default": null,
+      "logic": null,
+      "suffix": "",
+      "list": []
+    }
+  },
+  "depend": []
+}
+,
+"002": {
+  "current": "002",
+  "next": "003",
+  "main": {
+    "id": "physical_light_day",
+    "type": "question",
+    "group": "Activity",
+    "title": "Light physical activity",
+    "label": "In a week, how many days do you do?",
+    "help": "EX) walking, dancing, calisthenics, golfing, and horseback riding",
+    "image": "icon-activity",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Days",
+      "logical": {
+        "0": "destroyDepend",
+        "1": "paintDepend",
+        "2": "paintDepend",
+        "3": "paintDepend",
+        "4": "paintDepend",
+        "5": "paintDepend",
+        "6": "paintDepend",
+        "7": "paintDepend"
+      },
+      "list": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "depend": [
+    {
+      "id": "physical_light_time",
+      "type": "question",
+      "title": "",
+      "label": "On each day, how long?",
+      "help": "",
+      "image": "",
+      "answers": {
+        "template": "select-option",
+        "default": 2,
+        "suffix": "",
+        "logical": null,
+        "list": [
+          "30 minutes or less",
+          "About 45 min",
+          "About 60 min",
+          "About 75 min",
+          "90 Minutes or more",
+          "Don’t know"
+        ]
+      }
+    }
+  ]
+}
+,
+"003": {
+  "current": "003",
+  "next": "004",
+  "main": {
+    "id": "physical_moderate_day",
+    "type": "question",
+    "group": "Activity",
+    "title": "Moderate physical activity",
+    "label": "In a week, how many days do you do?",
+    "help": "Ex) gardening, bicycling, jogging, swimming, and playing tennis",
+    "image": "icon-activity",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Days",
+      "logical": {
+        "0": "destroyDepend",
+        "1": "paintDepend",
+        "2": "paintDepend",
+        "3": "paintDepend",
+        "4": "paintDepend",
+        "5": "paintDepend",
+        "6": "paintDepend",
+        "7": "paintDepend"
+      },
+      "list": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "depend": [
+    {
+      "id": "physical_moderate_time",
+      "type": "question",
+      "title": "",
+      "label": "On each day, how long?",
+      "help": "",
+      "image": "",
+      "answers": {
+        "template": "select-option",
+        "default": 2,
+        "suffix": "",
+        "logical": null,
+        "list": [
+          "30 minutes or less",
+          "About 45 min",
+          "About 60 min",
+          "About 75 min",
+          "90 Minutes or more",
+          "Don’t know"
+        ]
+      }
+    }
+  ]
+}
+,
+"004": {
+  "current": "004",
+  "next": "005-1",
+  "main": {
+    "id": "physical_vigorous_day",
+    "type": "question",
+    "group": "Activity",
+    "title": "Vigorous physical activity",
+    "label": "In a week, how many days do you do?",
+    "help": "Ex) aerobic dancing, using exercise machines, running, and playing soccer",
+    "image": "icon-activity",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Days",
+      "logical": {
+        "0": "destroyDepend",
+        "1": "paintDepend",
+        "2": "paintDepend",
+        "3": "paintDepend",
+        "4": "paintDepend",
+        "5": "paintDepend",
+        "6": "paintDepend",
+        "7": "paintDepend"
+      },
+      "list": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "depend": [
+    {
+      "id": "physical_vigorous_time",
+      "type": "question",
+      "title": "",
+      "label": "On each day, how long?",
+      "help": "",
+      "image": "",
+      "answers": {
+        "template": "select-option",
+        "default": 2,
+        "suffix": "",
+        "logical": null,
+        "list": [
+          "30 minutes or less",
+          "About 45 min",
+          "About 60 min",
+          "About 75 min",
+          "90 Minutes or more",
+          "Don’t know"
+        ]
+      }
+    }
+  ]
+}
+,
+"005-1": {
+  "current": "005-1",
+  "next": "005-2",
+  "main": {
+    "id": "cognitive_reading",
+    "type": "question",
+    "group": "Read",
+    "title": "Reading books or news",
+    "label": "In a week, how many days do you spend at least 20 minutes?",
+    "help": "",
+    "image": "icon-read",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Days",
+      "logical": null,
+      "list": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "depend": []
+}
+,
+"005-2": {
+  "current": "005-2",
+  "next": "005-3",
+  "main": {
+    "id": "cognitive_puzzles",
+    "type": "question",
+    "group": "Puzzles",
+    "title": "Solving puzzles",
+    "label": "In a week, how many days do you spend at least 20 minutes?",
+    "help": "Ex) crossword puzzles or Sudoku",
+    "image": "icon-puzzles",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Days",
+      "logical": null,
+      "list": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "depend": []
+}
+,
+"005-3": {
+  "current": "005-3",
+  "next": "005-4",
+  "main": {
+    "id": "cognitive_games",
+    "type": "question",
+    "group": "Games",
+    "title": "Playing Games",
+    "label": "In a week, how many days do you spend at least 20 minutes?",
+    "help": "Ex) board games, card games or video games",
+    "image": "icon-games",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Days",
+      "logical": null,
+      "list": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "depend": []
+}
+,
+"005-4": {
+  "current": "005-4",
+  "next": "006",
+  "main": {
+    "id": "cognitive_art",
+    "type": "question",
+    "group": "Art",
+    "title": "Producing Art",
+    "label": "In a week, how many days do you spend at least 20 minutes?",
+    "help": "Ex) creative writing, painting, or playing an instrument",
+    "image": "icon-art",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Days",
+      "logical": null,
+      "list": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "depend": []
+}
+,
+"006": {
+  "current": "006",
+  "next": "007-1",
+  "main": {
+    "id": "",
+    "type": "topic",
+    "group": "Diet",
+    "title": "Please answer about your <span class=\"highlight--diet\">Diet habits</span> in a typical week.",
+    "label": "",
+    "help": "",
+    "image": "badge-diet",
+    "answers": {
+      "template": "",
+      "default": null,
+      "logic": null,
+      "suffix": "",
+      "list": []
+    }
+  },
+  "depend": []
+}
+,
+"007-1": {
+  "current": "007-1",
+  "next": "007-2",
+  "main": {
+    "id": "diet_non_fried_fish",
+    "type": "question",
+    "group": "Fish",
+    "title": "Fish",
+    "label": "In a week, how many days do you eat at least one meal containing a portion?",
+    "help": "(not including fried fish)",
+    "image": "icon-fish",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Days",
+      "logical": null,
+      "list": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "depend": []
+}
+,
+"007-2": {
+  "current": "007-2",
+  "next": "007-3",
+  "main": {
+    "id": "diet_vegetable",
+    "type": "question",
+    "group": "Vegetables",
+    "title": "Raw or cooked vegetables",
+    "label": "In a week, how many days do you eat at least one meal containing a portion?",
+    "help": "",
+    "image": "icon-raw",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Days",
+      "logical": null,
+      "list": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "depend": []
+}
+,
+"007-3": {
+  "current": "007-3",
+  "next": "007-4",
+  "main": {
+    "id": "diet_red_meat",
+    "type": "question",
+    "group": "Red meats",
+    "title": "Red meats or processed meats",
+    "label": "In a week, how many days do you eat at least one meal containing a portion?",
+    "help": "Ex) beef or pork",
+    "image": "icon-meats",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Days",
+      "logical": null,
+      "list": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "depend": []
+}
+,
+"007-4": {
+  "current": "007-4",
+  "next": "007-5",
+  "main": {
+    "id": "diet_fruit",
+    "type": "question",
+    "group": "Fruit",
+    "title": "Fruits and berries",
+    "label": "In a week, how many days do you eat at least one meal containing a portion?",
+    "help": "",
+    "image": "icon-fruits",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Days",
+      "logical": null,
+      "list": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "depend": []
+}
+,
+"007-5": {
+  "current": "007-5",
+  "next": "007-6",
+  "main": {
+    "id": "diet_chicken",
+    "type": "question",
+    "group": "Chicken",
+    "title": "Chicken",
+    "label": "In a week, how many days do you eat at least one meal containing a portion?",
+    "help": "",
+    "image": "icon-chicken",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Days",
+      "logical": null,
+      "list": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "depend": []
+}
+,
+"007-6": {
+  "current": "007-6",
+  "next": "007-7",
+  "main": {
+    "id": "diet_nuts",
+    "type": "question",
+    "group": "Nuts",
+    "title": "Nuts",
+    "label": "In a week, how many days do you eat at least one meal containing a portion?",
+    "help": "",
+    "image": "icon-nuts",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Days",
+      "logical": null,
+      "list": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "depend": []
+}
+,
+"007-7": {
+  "current": "007-7",
+  "next": "008",
+  "main": {
+    "id": "diet_high_carb_foods",
+    "type": "question",
+    "group": "Carb foods",
+    "title": "Whole grain foods",
+    "label": "In a week, how many days do you eat at least one meal containing a portion?",
+    "help": "Ex) bread or pasta",
+    "image": "icon-grain",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Days",
+      "logical": null,
+      "list": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "depend": []
+}
+,
+"008": {
+  "current": "008",
+  "next": "009",
+  "main": {
+    "id": "diet_natural_sugars",
+    "type": "question",
+    "group": "Sugar",
+    "title": "",
+    "label": "How often do you consume Natural-sugary candy or drinks?",
+    "help": "Ex) soda, juice, or sweetened coffee",
+    "image": "icon-sugar",
+    "answers": {
+      "template": "select-option",
+      "default": 2,
+      "suffix": "",
+      "logical": null,
+      "list": [
+        "Never or Almost Never",
+        "One Time a Week",
+        "A Few Times a Week",
+        "One Time a Day",
+        "A Few Times a Day or More"
+      ]
+    }
+  },
+  "depend": []
+}
+,
+"009": {
+  "current": "009",
+  "next": "010",
+  "main": {
+    "id": "diet_artificial_sweeteners",
+    "type": "question",
+    "group": "Sugar",
+    "title": "",
+    "label": "How often do you consume Artificially-sweetened candy or drinks?",
+    "help": "Ex) diet soda",
+    "image": "icon-sugar",
+    "answers": {
+      "template": "select-option",
+      "default": 2,
+      "suffix": "",
+      "logical": null,
+      "list": [
+        "Never or Almost Never",
+        "One Time a Week",
+        "A Few Times a Week",
+        "One Time a Day",
+        "A Few Times a Day or More"
+      ]
+    }
+  },
+  "depend": []
+}
+,
+"010": {
+  "current": "010",
+  "next": "011",
+  "main": {
+    "id": "diet_olive_oil_use",
+    "type": "question",
+    "group": "Olive oil",
+    "title": "",
+    "label": "If you cook at home, do you cook with olive oil?",
+    "help": "Ex) diet soda",
+    "image": "icon-olive",
+    "answers": {
+      "template": "radio-regular",
+      "default": null,
+      "suffix": "",
+      "logical": null,
+      "list": [
+        "Yes, every day or almost every day",
+        "Yes, several times  a week",
+        "Yes, occasionally",
+        "No",
+        "Don’t know",
+        "Don’t cook"
+      ]
+    }
+  },
+  "depend": []
+}
+,
+"011": {
+  "current": "011",
+  "next": "013",
+  "main": {
+    "id": "smoking_ever",
+    "type": "question",
+    "group": "Smoke",
+    "title": "",
+    "label": "At any time in your life, did you ever smoke once a month or more?",
+    "help": "",
+    "image": "icon-smoke",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "",
+      "logical": {
+        "0": "paintDepend",
+        "1": "destroyDepend"
+      },
+      "list": [
+        "Yes",
+        "No"
+      ]
+    }
+  },
+  "depend": [
+    {
+      "id": "smoking_current",
+      "type": "question",
+      "group": "Smoke",
+      "title": "",
+      "label": "Do you currently smoke once a month or more?",
+      "help": "",
+      "image": "",
+      "answers": {
+        "template": "radio-circle",
+        "default": null,
+        "suffix": "",
+        "logical": null,
+        "list": [
+          "Yes",
+          "No"
+        ]
+      }
+    }
+  ]
+}
+,
+"013": {
+  "current": "013",
+  "next": "017",
+  "main": {
+    "id": "drinking_ever",
+    "type": "question",
+    "group": "Alcoholic",
+    "title": "",
+    "label": "At any time in your life, did you ever drink alcohol once a month or more?",
+    "help": "",
+    "image": "icon-alcoholic",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "",
+      "logical": {
+        "0": "paintDepend",
+        "1": "destroyDepend"
+      },
+      "list": [
+        "Yes",
+        "No"
+      ]
+    }
+  },
+  "depend": [
+    {
+      "id": "drinking_current",
+      "type": "question",
+      "group": "Smoke",
+      "title": "",
+      "label": "Do you currently drink alcohol once a month or more?",
+      "help": "",
+      "image": "",
+      "logical": null,
+      "answers": {
+        "template": "radio-circle",
+        "default": null,
+        "suffix": "",
+        "logical": {
+          "0": "skippable-015",
+          "1": "skippable-017"
+        },
+        "list": [
+          "Yes",
+          "No"
+        ]
+      }
+    }
+  ]
+}
+,
+"015": {
+  "current": "015",
+  "next": "017",
+  "main": {
+    "id": "drinking_frequency",
+    "type": "question",
+    "group": "Alcoholic",
+    "title": "",
+    "label": "In a week, how many days do you or did you have at least one alcoholic drink?",
+    "help": "",
+    "image": "icon-alcoholic",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Days",
+      "logical": {
+        "0": "destroyDepend",
+        "1": "paintDepend",
+        "2": "paintDepend",
+        "3": "paintDepend",
+        "4": "paintDepend",
+        "5": "paintDepend",
+        "6": "paintDepend",
+        "7": "paintDepend"
+      },
+      "list": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "depend": [
+    {
+      "id": "drinking_intensity",
+      "type": "question",
+      "group": "Smoke",
+      "title": "",
+      "label": "On a typical day when you drink, how many drinks do you have? If you no longer drink, how many drinks did you have per day when you did? ",
+      "help": "For example, one glass of wine, one beer, or one shot of spirits is each considered one drink.",
+      "image": "",
+      "logical": null,
+      "answers": {
+        "template": "radio-circle",
+        "default": null,
+        "suffix": "Drinks",
+        "logical": null,
+        "list": [
+          "≤1",
+          2,
+          3,
+          4,
+          5,
+          "≥6",
+          "Don't know"
+        ]
+      }
+    }
+  ]
+}
+,
+"017": {
+  "current": "017",
+  "next": "018",
+  "main": {
+    "id": "",
+    "type": "topic",
+    "group": "Social",
+    "title": "Please answer about your typical <span class=\"highlight--social\">Social activity</span>",
+    "label": "",
+    "help": "",
+    "image": "badge-social",
+    "answers": {
+      "template": "",
+      "default": null,
+      "logic": null,
+      "suffix": "",
+      "list": []
+    }
+  },
+  "depend": []
+}
+,
+"018": {
+  "current": "018",
+  "next": "020",
+  "main": {
+    "id": "social_marital_status",
+    "type": "question",
+    "group": "Marital",
+    "title": "",
+    "label": "What is your current marital status?",
+    "help": "",
+    "image": "icon-marital",
+    "answers": {
+      "template": "select-option",
+      "default": null,
+      "suffix": "",
+      "logical": "paintDepend",
+      "list": [
+        "Single",
+        "Married",
+        "Domestic Partner",
+        "Separated",
+        "Divorced",
+        "Widowed"
+      ]
+    }
+  },
+  "depend": [
+    {
+      "id": "social_lving_arrangement",
+      "type": "question",
+      "group": "Marital",
+      "title": "",
+      "label": "What best describes your current living arrangement? Please mark all that apply.",
+      "help": "",
+      "image": "marital-icon",
+      "answers": {
+        "template": "checkbox-option",
+        "default": null,
+        "suffix": "",
+        "logical": null,
+        "list": [
+          "live alone",
+          "live with my spouse/partner",
+          "live with other family, not including spouse/partner",
+          "live with friends or roommates"
+        ]
+      }
+    }
+  ]
+}
+,
+"020": {
+  "current": "020",
+  "next": "022",
+  "main": {
+    "id": "social_group_activity_participation",
+    "type": "question",
+    "group": "Social events",
+    "title": "",
+    "label": "How often do you participate in social, political, or community group events?",
+    "help": "",
+    "image": "icon-social",
+    "answers": {
+      "template": "select-option",
+      "default": null,
+      "suffix": "",
+      "logical": "paintDepend",
+      "list": [
+        "A Few Times a Year or Less",
+        "One Time a Month",
+        "A Few Times a Month",
+        "One Time a Week",
+        "A Few Times a Week or More"
+      ]
+    }
+  },
+  "depend": [
+    {
+      "id": "social_event_attendance",
+      "type": "question",
+      "group": "Social",
+      "title": "",
+      "label": "How often do you participate in social, events with friends or coworkers?",
+      "help": "",
+      "image": "social-icon",
+      "answers": {
+        "template": "select-option",
+        "default": null,
+        "suffix": "",
+        "logical": null,
+        "list": [
+          "A Few Times a Year or Less",
+          "One Time a Month",
+          "A Few Times a Month",
+          "One Time a Week",
+          "A Few Times a Week or More"
+        ]
+      }
+    }
+  ]
+}
+,
+"022": {
+  "current": "022",
+  "next": "023",
+  "main": {
+    "id": "social_close_relationship",
+    "type": "question",
+    "group": "Relations",
+    "title": "",
+    "label": "Can you think of at least one person with whom you have a relationship close enough that you could call on them for help, if you needed it?",
+    "help": "",
+    "image": "icon-relations",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "",
+      "logical": null,
+      "list": [
+        "Yes",
+        "No",
+        "Don't know"
+      ]
+    }
+  },
+  "depend": []
+}
+,
+"023": {
+  "current": "023",
+  "next": "024",
+  "main": {
+    "id": "",
+    "type": "topic",
+    "group": "Stress",
+    "title": "Please answer about your <span class=\"highlight--stress\">Stress</span>",
+    "label": "",
+    "help": "",
+    "image": "badge-stress",
+    "answers": {
+      "template": "",
+      "default": null,
+      "logic": null,
+      "suffix": "",
+      "list": []
+    }
+  },
+  "depend": []
+}
+,
+"024": {
+  "current": "024",
+  "next": "027",
+  "main": {
+    "id": "stress_frequency",
+    "type": "question",
+    "group": "Life events",
+    "title": "",
+    "label": "Have you ever experienced any stressful life events lasting longer than a month?",
+    "help": "Stressful life events refer to feelings of irritability, tension, nervousness, fear, anxiety or sleep disturbance resulting from work, health or family situation.",
+    "image": "icon-life",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "",
+      "logical": {
+        "0": "paintDepend",
+        "1": "destroyDepend",
+        "2": "destroyDepend"
+      },
+      "list": [
+        "Yes",
+        "No",
+        "Don't know"
+      ]
+    }
+  },
+  "depend": [
+    {
+      "id": "stress_timeframe",
+      "type": "question",
+      "group": "Stress",
+      "title": "",
+      "label": "How many times have you experienced stressful life events?",
+      "help": "",
+      "image": "",
+      "answers": {
+        "template": "radio-regular",
+        "default": null,
+        "suffix": "",
+        "logical": {
+          "0": "paintDepend-1",
+          "1": "paintDepend-2",
+          "2": "paintDepend-3"
+        },
+        "list": [
+          "one period of stress that lasted for one month or more.",
+          "several periods of stress that lasted for one month or more.",
+          "many periods of stress, or constant stress that lasted for one month or more, or constant stress."
+        ]
+      }
+    },
+    {
+      "id": "stress_when",
+      "type": "question",
+      "group": "Stress",
+      "title": "",
+      "label": "When did these stressful life events occur?",
+      "help": "",
+      "image": "",
+      "answers": {
+        "template": "radio-regular",
+        "default": null,
+        "suffix": "",
+        "logical": null,
+        "list": [
+          "More than 5 years ago",
+          "During the past 1 to 5 years",
+          "During the past year",
+          "Don't know"
+        ]
+      }
+    }
+  ]
+}
+,
+"027": {
+  "current": "027",
+  "next": "030",
+  "main": {
+    "id": "sleep_hours",
+    "type": "question",
+    "group": "Sleep",
+    "title": "",
+    "label": "How many hours do you sleep at night?",
+    "help": "",
+    "image": "icon-sleep",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Hours",
+      "logical": {
+        "0": "paintDepend",
+        "1": "paintDepend",
+        "2": "paintDepend",
+        "3": "paintDepend",
+        "4": "paintDepend",
+        "5": "paintDepend",
+        "6": "paintDepend",
+        "7": "paintDepend"
+      },
+      "list": [
+        "≤4",
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        "≥11"
+      ]
+    }
+  },
+  "depend": [
+    {
+      "id": "sleep_quality",
+      "type": "question",
+      "group": "Stress",
+      "title": "",
+      "label": "How would you rate the quality of your typical night’s sleep?",
+      "help": "",
+      "image": "stress-icon",
+      "answers": {
+        "template": "select-option",
+        "default": 2,
+        "suffix": "",
+        "logical": "paintDepend-1",
+        "list": [
+          "Poor",
+          "Fair",
+          "Good",
+          "Very Good",
+          "Excellent"
+        ]
+      }
+    },
+    {
+      "id": "sleep_interruptions",
+      "type": "question",
+      "group": "Stress",
+      "title": "",
+      "label": "How many times do you wake up and have trouble falling asleep again in a typical night?",
+      "help": "",
+      "image": "stress-icon",
+      "answers": {
+        "template": "radio-circle",
+        "default": null,
+        "suffix": "Times",
+        "logical": null,
+        "list": [
+          0,
+          1,
+          2,
+          3,
+          "≥4"
+        ]
+      }
+    }
+  ]
+}
+,
+"030": {
+  "current": "030",
+  "next": "031",
+  "main": {
+    "id": "",
+    "type": "topic",
+    "group": "Medical",
+    "title": "Please answer about your <span class=\"highlight--medical\">Medical conditions</span>",
+    "label": "",
+    "help": "",
+    "image": "badge-medical",
+    "answers": {
+      "template": "",
+      "default": null,
+      "logic": null,
+      "suffix": "",
+      "list": []
+    }
+  },
+  "depend": []
+}
+,
+"031": {
+  "current": "031",
+  "next": "033",
+  "main": {
+    "id": "medical_depression",
+    "type": "question",
+    "group": "Conditions",
+    "title": "",
+    "label": "Have you ever been diagnosed with or had any of the following medical conditions? Please mark all that apply",
+    "help": "",
+    "image": "icon-conditions",
+    "answers": {
+      "template": "checkbox-option",
+      "default": null,
+      "suffix": "",
+      "logical": "collectData-031",
+      "list": [
+        "Atrial Fibrillation",
+        "Coronary Artery Disease",
+        "Depression",
+        "Diabetes",
+        "Heart Attack",
+        "High blood pressure or Hypertension",
+        "High cholesterol or hyperlipidemia",
+        "Sleep Apnea",
+        "Stroke"
+      ]
+    }
+  },
+  "depend": []
+}
+,
+"032": {
+  "current": "032",
+  "next": "033",
+  "main": {
+    "id": "medical_depression_inherit",
+    "type": "question",
+    "group": "Conditions",
+    "title": "",
+    "label": "",
+    "help": "",
+    "image": "icon-conditions",
+    "answers": {
+      "template": "radio-regular",
+      "default": null,
+      "suffix": "",
+      "logical": null,
+      "list": [
+        "Yes, diet",
+        "Yes, exercise",
+        "Yes, medication",
+        "No",
+        "Don’t know"
+      ]
+    }
+  },
+  "depend": []
+}
+,
+"033": {
+  "current": "033",
+  "next": "034",
+  "main": {
+    "id": "primary_occupation",
+    "type": "question",
+    "group": "Conditions",
+    "title": "",
+    "label": "Which is one category best describes the kind of work you do (or did, if you no longer work) as your primary occupation?",
+    "help": "",
+    "image": "icon-conditions",
+    "answers": {
+      "template": "radio-regular",
+      "default": null,
+      "suffix": "",
+      "logical": null,
+      "list": [
+        "Administrative Support",
+        "Precision production, craft, repair",
+        "Farming/forestry/fishing",
+        "Professional",
+        "Laborer",
+        "Sales",
+        "Managerial",
+        "Service",
+        "Technical"
+      ]
+    }
+  },
+  "depend": []
+}
+,
+"034": {
+  "current": "034",
+  "next": "035",
+  "main": {
+    "id": "education_level",
+    "type": "question",
+    "group": "Education",
+    "title": "",
+    "label": "What is your highest completed level of education?",
+    "help": "",
+    "image": "icon-education",
+    "answers": {
+      "template": "radio-regular",
+      "default": null,
+      "suffix": "",
+      "logical": null,
+      "list": [
+        "Grammar School  (Less than High School)",
+        "High School or General Educational Development (GED)",
+        "Associate’s (or 2-year) Degree",
+        "Bachelor’s Degree",
+        "Graduate Degree (for example: Master’s Degree, PhD, MD)"
+      ]
+    }
+  },
+  "depend": []
+}
+,
+"035": {
+  "current": "035",
+  "next": "",
+  "main": {
+    "id": "ethnicity",
+    "type": "question",
+    "group": "Race or Ethnicity",
+    "title": "",
+    "label": "What is your race or ethnicity?",
+    "help": "",
+    "image": "icon-race",
+    "answers": {
+      "template": "radio-regular",
+      "default": null,
+      "suffix": "",
+      "logical": null,
+      "list": [
+        "African or African American",
+        "American Indian or Native Alaskan",
+        "Arabic or Middle Eastern",
+        "Asian",
+        "Caucasian (Non-Hispanic White)",
+        "Hispanic/Latino",
+        "Pacific Islander",
+        "Other"
+      ]
+    }
+  },
+  "depend": []
+}
+}

@@ -1,0 +1,30 @@
+"007-4": {
+  "current": "007-4",
+  "next": "007-5",
+  "main": {
+    "id": "diet_fruit",
+    "type": "question",
+    "group": "Fruit",
+    "title": "Fruits and berries",
+    "label": "In a week, how many days do you eat at least one meal containing a portion?",
+    "help": "",
+    "image": "icon-fruits",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "Days",
+      "logical": null,
+      "list": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "depend": []
+}

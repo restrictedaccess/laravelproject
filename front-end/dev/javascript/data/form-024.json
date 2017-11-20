@@ -1,0 +1,75 @@
+"024": {
+  "current": "024",
+  "next": "027",
+  "main": {
+    "id": "stress_frequency",
+    "type": "question",
+    "group": "Life events",
+    "title": "",
+    "label": "Have you ever experienced any stressful life events lasting longer than a month?",
+    "help": "Stressful life events refer to feelings of irritability, tension, nervousness, fear, anxiety or sleep disturbance resulting from work, health or family situation.",
+    "image": "icon-life",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "",
+      "logical": {
+        "0": "paintDepend",
+        "1": "destroyDepend",
+        "2": "destroyDepend"
+      },
+      "list": [
+        "Yes",
+        "No",
+        "Don't know"
+      ]
+    }
+  },
+  "depend": [
+    {
+      "id": "stress_timeframe",
+      "type": "question",
+      "group": "Stress",
+      "title": "",
+      "label": "How many times have you experienced stressful life events?",
+      "help": "",
+      "image": "",
+      "answers": {
+        "template": "radio-regular",
+        "default": null,
+        "suffix": "",
+        "logical": {
+          "0": "paintDepend-1",
+          "1": "paintDepend-2",
+          "2": "paintDepend-3"
+        },
+        "list": [
+          "one period of stress that lasted for one month or more.",
+          "several periods of stress that lasted for one month or more.",
+          "many periods of stress, or constant stress that lasted for one month or more, or constant stress."
+        ]
+      }
+    },
+    {
+      "id": "stress_when",
+      "type": "question",
+      "group": "Stress",
+      "title": "",
+      "label": "When did these stressful life events occur?",
+      "help": "",
+      "image": "",
+      "answers": {
+        "template": "radio-regular",
+        "default": null,
+        "suffix": "",
+        "logical": null,
+        "list": [
+          "More than 5 years ago",
+          "During the past 1 to 5 years",
+          "During the past year",
+          "Don't know"
+        ]
+      }
+    }
+  ]
+}

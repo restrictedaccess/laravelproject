@@ -1,0 +1,19 @@
+.thankyou__page {
+  &.exception_page {
+    .page_title {
+      &.exception_title {
+        line-height: 2.9rem;
+        font-size: 2.3rem;
+      }
+    }
+    .block__icons_cover {
+      padding: 1.5rem 0 3.3rem;
+      &.error {
+        padding: 2.5rem 0 5rem;
+      }
+      &.error500 {
+        padding: 4.2rem 0 6.2rem;
+      }
+    }
+  }
+}

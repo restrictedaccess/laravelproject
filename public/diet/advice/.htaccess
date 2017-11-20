@@ -1,0 +1,5 @@
+AuthUserFile /home/ec2-user/.htpasswd
+AuthName "Login Area"
+AuthType Basic
+
+require user rrs

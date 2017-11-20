@@ -1,0 +1,47 @@
+"011": {
+  "current": "011",
+  "next": "013",
+  "main": {
+    "id": "smoking_ever",
+    "type": "question",
+    "group": "Smoke",
+    "title": "",
+    "label": "At any time in your life, did you ever smoke once a month or more?",
+    "help": "",
+    "image": "icon-smoke",
+    "answers": {
+      "template": "radio-circle",
+      "default": null,
+      "suffix": "",
+      "logical": {
+        "0": "paintDepend",
+        "1": "destroyDepend"
+      },
+      "list": [
+        "Yes",
+        "No"
+      ]
+    }
+  },
+  "depend": [
+    {
+      "id": "smoking_current",
+      "type": "question",
+      "group": "Smoke",
+      "title": "",
+      "label": "Do you currently smoke once a month or more?",
+      "help": "",
+      "image": "",
+      "answers": {
+        "template": "radio-circle",
+        "default": null,
+        "suffix": "",
+        "logical": null,
+        "list": [
+          "Yes",
+          "No"
+        ]
+      }
+    }
+  ]
+}

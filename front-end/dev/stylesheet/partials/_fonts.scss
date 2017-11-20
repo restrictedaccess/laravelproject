@@ -1,0 +1,61 @@
+/*************************************
+**************************************
+These are the styles for
+the fonts section
+**************************************
+**************************************/
+
+
+/*source_sans_proregular*/
+
+@font-face {
+  font-family: 'source_sans_proregular';
+  src: url('../fonts/sourcesanspro-regular.eot');
+  src: url('../fonts/sourcesanspro-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/sourcesanspro-regular.woff2') format('woff2'), url('../fonts/sourcesanspro-regular.woff') format('woff'), url('../fonts/sourcesanspro-regular.ttf') format('truetype'), url('../fonts/sourcesanspro-regular.svg#source_sans_proregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*source_sans_prolight*/
+
+@font-face {
+  font-family: 'source_sans_prolight';
+  src: url('../fonts/sourcesanspro-light.eot');
+  src: url('../fonts/sourcesanspro-light.eot?#iefix') format('embedded-opentype'), url('../fonts/sourcesanspro-light.woff2') format('woff2'), url('../fonts/sourcesanspro-light.woff') format('woff'), url('../fonts/sourcesanspro-light.ttf') format('truetype'), url('../fonts/sourcesanspro-light.svg#source_sans_prolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*source_sans_probold*/
+
+@font-face {
+  font-family: 'source_sans_probold';
+  src: url('../fonts/sourcesanspro-bold.eot');
+  src: url('../fonts/sourcesanspro-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/sourcesanspro-bold.woff2') format('woff2'), url('../fonts/sourcesanspro-bold.woff') format('woff'), url('../fonts/sourcesanspro-bold.ttf') format('truetype'), url('../fonts/sourcesanspro-bold.svg#source_sans_probold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*source_sans_proitalic*/
+
+@font-face {
+  font-family: 'source_sans_proitalic';
+  src: url('../fonts/sourcesanspro-italic.eot');
+  src: url('../fonts/sourcesanspro-italic.eot?#iefix') format('embedded-opentype'), url('../fonts/sourcesanspro-italic.woff2') format('woff2'), url('../fonts/sourcesanspro-italic.woff') format('woff'), url('../fonts/sourcesanspro-italic.ttf') format('truetype'), url('../fonts/sourcesanspro-italic.svg#source_sans_proitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*source_sans_prosemibold*/
+
+@font-face {
+  font-family: 'source_sans_prosemibold';
+  src: url('../fonts/sourcesanspro-semibold.eot');
+  src: url('../fonts/sourcesanspro-semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/sourcesanspro-semibold.woff2') format('woff2'), url('../fonts/sourcesanspro-semibold.woff') format('woff'), url('../fonts/../fonts/sourcesanspro-semibold.ttf') format('truetype'), url('../fonts/sourcesanspro-semibold.svg#source_sans_prosemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

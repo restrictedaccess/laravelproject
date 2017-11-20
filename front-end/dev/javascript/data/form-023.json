@@ -1,0 +1,21 @@
+"023": {
+  "current": "023",
+  "next": "024",
+  "main": {
+    "id": "",
+    "type": "topic",
+    "group": "Stress",
+    "title": "Please answer about your <span class=\"highlight--stress\">Stress</span>",
+    "label": "",
+    "help": "",
+    "image": "badge-stress",
+    "answers": {
+      "template": "",
+      "default": null,
+      "logic": null,
+      "suffix": "",
+      "list": []
+    }
+  },
+  "depend": []
+}

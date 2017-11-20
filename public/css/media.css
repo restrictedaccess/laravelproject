@@ -1,0 +1,182 @@
+/* Medium screens button preview*/
+@media screen
+  and (min-width: 768px)
+  and (max-width: 1023px) {
+  #risk-reduction-score .btn-prev {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    position: absolute;
+    width: auto;
+    background: rgba(50, 151, 223, 0.83);
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 15px;
+    bottom: 19px;
+    left: 16%;
+  }
+  .form-question .btn-next .btn_control {
+    margin-top: 0;
+  }
+
+  .form-question .answers .answers__list {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .radio__circle:first-child:nth-last-child(4),
+  .radio__circle:first-child:nth-last-child(4) ~ .radio__circle,
+  .radio__circle:first-child:nth-last-child(8),
+  .radio__circle:first-child:nth-last-child(8) ~ .radio__circle {
+    width: 20%;
+  }
+
+  .form-question .answers .answers__suffix {
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+  }
+}
+
+/* Small screens button preview*/
+@media screen
+  and (min-width: 500px)
+  and (max-width: 767px) {
+  #risk-reduction-score .btn-prev {
+    /* On small screens, we are no longer using row direction but column */
+    position: relative;
+    display: inline-block;
+    width: 45%;
+    left: 0;
+    bottom: 0;
+    float: left;
+    /*margin-top: 5px;*/
+  }
+  #risk-reduction-score .btn-next {
+    width: 45%;
+    display: inline-block;
+    float:right;
+  }
+  .form-question .btn-next .btn_control {
+    margin-top: 0;
+  }
+
+  .form-question .answers .answers__list {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .radio__circle:first-child:nth-last-child(4),
+  .radio__circle:first-child:nth-last-child(4) ~ .radio__circle,
+  .radio__circle:first-child:nth-last-child(8),
+  .radio__circle:first-child:nth-last-child(8) ~ .radio__circle {
+    width: 24.221%;
+  }
+
+  .form-question .answers .answers__suffix {
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+  }
+}
+
+/*desktop screen*/
+@media screen
+  and (min-width: 1024px) {
+  #risk-reduction-score .btn-prev {
+    left: 24%;
+  }
+  .form-question .answers .answers__list {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .radio__circle:first-child:nth-last-child(4),
+  .radio__circle:first-child:nth-last-child(4) ~ .radio__circle,
+  .radio__circle:first-child:nth-last-child(8),
+  .radio__circle:first-child:nth-last-child(8) ~ .radio__circle {
+    width: 20%;
+  }
+
+  .form-question .answers .answers__suffix {
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+  }
+}
+
+/* small devices */
+@media screen
+  and (min-width: 320px)
+  and (max-width: 499px) {
+  .hero .risk__reduction .risk__reduction__button {
+    margin: 0;
+  }
+  .form-topic .topic__cover {
+    margin: 3rem auto 3rem;
+  }
+  .progress {
+    margin-bottom: 30px;
+    margin-top: -15px;
+  }
+  .form-topic {
+    margin-top: 5rem;
+  }
+  .form-question .question__cat {
+    margin: 0;
+  }
+
+  #risk-reduction-score .btn-prev {
+    position: fixed;
+    width: 40%;
+    left: 0;
+  }
+  #risk-reduction-score .btn-next {
+    width: 40%;
+    margin-right: 0;
+  }
+
+  .form-question .btn-next .btn_control {
+    margin-top: 0;
+  }
+
+  .form-question .answers .answers__suffix {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+
+  .profile_content .input-group .check__score {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+  }
+  .profile_content .input-group .check__score .btn__back {
+    width: 100%;
+  }
+
+  /*dialog*/
+  #modal-confirm .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  #modal-confirm .btn {
+    font-size: 13px;
+  }
+}
+
+/*small devices for heading text*/
+@media screen
+  and (min-width: 320px)
+  and (max-width: 374px) {
+  .hero {
+    padding: 3rem 2rem 0 2rem;
+    height: auto;
+    min-height: 0;
+  }
+  .hero .top__caption .br {
+    display: inline;
+  }
+  .hero .risk__reduction {
+    margin-top: 15rem;
+  }
+}
